@@ -1,0 +1,63 @@
+# Blender MTL File: 'mutte_shaolin.blend'
+# Material Count: 5
+
+newmtl Material
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.500000 0.500000 0.500000
+Ke 0.080000 0.080000 0.080000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd /home/gogo/Bureau/PolySphere_1.png
+map_Bump -bm -3.449198 /home/gogo/Bureau/PolySphere_2.png
+map_Ns  /home/gogo/Bureau/PolySphere_3.png
+
+newmtl fogo-01
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 0.000000
+illum 1
+map_Kd C:/Documents and Settings/Administrador/Desktop/textura do anjo/ewae.png
+map_d  C:/Documents and Settings/Administrador/Desktop/textura do anjo/ewae.png
+
+newmtl olho
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 2.000000 2.000000 2.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd /home/gogo/Bureau/PolySphere_1.png
+
+newmtl olho_textura_cor.png
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 2.000000 2.000000 2.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd /Desktop/textura cor-2.png
+
+newmtl roupa-01
+Ns 17.647059
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.200000 0.200000 0.200000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd /Desktop/textura cor-2.png
+map_Bump  /Desktop/textura normal.png
+map_Ks  /Desktop/textura cor-2.png
+map_Ns  /Desktop/textura do anjo/textura specular.png

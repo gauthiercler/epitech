@@ -1,0 +1,10 @@
+Liste des bonus:
+KO - Antialiasing.
+OK - Flou.
+OK - Export du rendu en bmp.
+OK - Formes finies.
+KO - Chargement et rendu d'objets Blender (obj).
+OK - Rendu en mutli-thread.
+OK - Textures depuis un fichier.
+KO - Textures procédurales.
+KO - Barre de Chargement.

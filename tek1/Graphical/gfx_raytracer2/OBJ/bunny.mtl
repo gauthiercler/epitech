@@ -1,0 +1,12 @@
+# Blender MTL File: 'stanford-bunny.blend'
+# Material Count: 1
+
+newmtl Shiny_Plastic
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.847862 0.881962 1.000000
+Ks 0.100000 0.098431 0.098431
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2

@@ -1,0 +1,24 @@
+-Object Preview Scene Order-
+
+-> Planes
+--> Ground.ini
+--> Corridor.ini
+--> Tunnel.ini
+--> Room.ini
+
+-> Cylinders
+--> Infinite.ini
+--> Trunk.ini
+--> Branches.ini
+
+-> Spheres
+--> Tree.ini
+
+-> Cones
+--> Pillar.ini
+--> RotatedPillar.ini
+
+-> Eye
+--> LeftPOV.ini
+--> RightPOV.ini
+--> RightPOVRD.ini

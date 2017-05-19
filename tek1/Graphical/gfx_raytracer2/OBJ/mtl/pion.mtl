@@ -1,0 +1,12 @@
+# Blender MTL File: 'chess.blend'
+# Material Count: 1
+
+newmtl White_marble
+Ns 343.137255
+Ka 0.080000 0.080000 0.080000
+Kd 0.640000 0.578898 0.536891
+Ks 1.000000 0.976430 0.905719
+Ke 0.000000 0.000000 0.000000
+Ni 1.270000
+d 0.816327
+illum 5

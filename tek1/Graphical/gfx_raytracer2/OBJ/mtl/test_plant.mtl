@@ -1,0 +1,15 @@
+# Blender MTL File: 'BSwap_FernModels_02.blend'
+# Material Count: 1
+
+newmtl Nature_Ferns_01_Mat_01
+Ns 27.450980
+Ka 1.000000 1.000000 1.000000
+Kd 0.076185 0.093059 0.016807
+Ks 0.262251 0.309469 0.043735
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 0.000000
+illum 2
+map_Kd Nature_Ferns_01_DiffMask_02.tga
+map_Ks  Nature_Ferns_01_DiffMask_02.tga
+map_d  Nature_Ferns_01_DiffMask_02.tga
