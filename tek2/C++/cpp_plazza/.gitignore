@@ -1,0 +1,81 @@
+### Gitignore for C/C++ projets - Anas B.
+
+# IntelliJ project files
+.idea
+cmake-build-debug
+cmake_modules
+out
+
+### C++ template
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+### C template
+# Prerequisites
+
+# Object files
+*.ko
+*.elf
+
+# Linker output
+*.ilk
+*.map
+*.exp
+
+# Precompiled Headers
+
+# Libraries
+
+# Shared objects (inc. Windows DLLs)
+*.so.*
+
+# Executables
+*.i*86
+*.x86_64
+*.hex
+
+# Debug files
+*.dSYM/
+*.su
+*.idb
+*.pdb
+
+# Kernel Module Compile Results
+*.mod*
+*.cmd
+modules.order
+Module.symvers
+Mkfile.old
+dkms.conf
+plazza
+cypher

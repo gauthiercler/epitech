@@ -1,0 +1,40 @@
+# Admiral Business Machines 1954-2042
+# Johnson decade
+# Clockdown (/CP1) is not connected
+
+.chipsets:
+clock		clockup
+input		master_reset
+
+output		o0
+output		o1
+output		o2
+output		o3
+output		o4
+output		o5
+output		o6
+output		o7
+output		o8
+output		o9
+
+output		cascade
+
+4017		johnson
+
+.links:
+clockup:1	johnson:14
+master_reset:1	johnson:15
+
+o0:1		johnson:3
+o1:1		johnson:2
+o2:1		johnson:4
+o3:1		johnson:7
+o4:1		johnson:10
+o5:1		johnson:1
+o6:1		johnson:5
+o7:1		johnson:6
+o8:1		johnson:9
+o9:1		johnson:11
+
+cascade:1	johnson:12
+

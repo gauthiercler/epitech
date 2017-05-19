@@ -1,0 +1,23 @@
+# Admiral Business Machines 1954-2042
+# D - Latch
+
+.chipsets:
+clock		clock
+input		data
+input		set
+input		reset
+
+output		out
+output		nout
+
+4013		dlatch
+
+.links:
+clock:1		dlatch:3
+data:1		dlatch:5
+set:1		dlatch:6
+reset:1		dlatch:4
+
+out:1		dlatch:1
+nout:1		dlatch:2
+

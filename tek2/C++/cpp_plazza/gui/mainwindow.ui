@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>744</width>
+    <height>355</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QTextEdit" name="textEdit">
+    <property name="geometry">
+     <rect>
+      <x>9</x>
+      <y>9</y>
+      <width>256</width>
+      <height>192</height>
+     </rect>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>310</y>
+      <width>721</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>No file selected</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>210</y>
+      <width>241</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>open file</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBox">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>240</y>
+      <width>241</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>Phone number</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Email address</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Ip address</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QPushButton" name="pushButton_2">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>270</y>
+      <width>241</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Send command</string>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="tableWidget">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>10</y>
+      <width>452</width>
+      <height>291</height>
+     </rect>
+    </property>
+    <attribute name="horizontalHeaderDefaultSectionSize">
+     <number>150</number>
+    </attribute>
+    <attribute name="horizontalHeaderMinimumSectionSize">
+     <number>150</number>
+    </attribute>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
