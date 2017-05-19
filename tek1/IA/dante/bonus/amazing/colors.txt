@@ -1,0 +1,21 @@
+Unselected : Blue.
+1st : #5CB3FF
+2nd : #6698FF
+
+Hover : Orange.
+1st : #F9966B
+2nd : #FF8040
+
+Selected : Red.
+1st : #F87217
+2nd : #FF2400
+
+Mini Title : Redish.
+
+1st : #DC381F
+2nd : #C11B17
+
+Title : Blueish.
+
+1st : #3090C7
+2nd : 

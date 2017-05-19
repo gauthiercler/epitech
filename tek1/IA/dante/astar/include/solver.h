@@ -1,0 +1,199 @@
+/*
+** solver.h for solver in /home/gogo/rendu/dante/profondeur/include/
+**
+** Made by Gauthier Cler
+** Login   <cler_g@epitech.eu>
+**
+** Started on  Wed Apr 27 22:41:51 2016 Gauthier Cler
+** Last update Sat May 21 16:43:41 2016 Gauthier Cler
+*/
+
+#ifndef SOLVER_H_
+# define SOLVER_H_
+
+#include			<stdbool.h>
+#include			<stdlib.h>
+#include			<stdint.h>
+
+typedef struct s_node		t_node;
+typedef struct s_list		t_list;
+
+typedef struct			s_pos
+{
+  int				x;
+  int				y;
+}				t_pos;
+
+struct				s_node
+{
+  t_pos				pos;
+  t_pos				father;
+  int				f;
+  int				g;
+  int				h;
+  t_node			*next;
+};
+
+struct				s_list
+{
+  int				x;
+  int				y;
+  t_list			*next;
+};
+
+typedef struct			s_map
+{
+  int				size_x;
+  int				size_y;
+  char				**array;
+}				t_map;
+
+typedef struct			s_solve
+{
+  t_map				map;
+  t_list			*list;
+}				t_solve;
+
+extern int			goal_x;
+extern int			goal_y;
+
+#ifndef SUCCESS
+# define SUCCESS		(0)
+#endif
+
+#ifndef ERROR
+# define ERROR			(1)
+#endif
+
+#ifndef READ_SIZE
+# define READ_SIZE		(4096)
+#endif
+
+#ifndef START_X
+# define START_X		(0)
+#endif
+
+#ifndef START_Y
+# define START_Y		(0)
+#endif
+
+#ifndef VISITED
+# define VISITED		'o'
+#endif
+
+#ifndef WALL
+# define WALL			'X'
+#endif
+
+#ifndef POSSIBLE
+# define POSSIBLE		'*'
+#endif
+
+#ifndef WAITING
+# define WAITING		'-'
+#endif
+
+#ifndef EXIT
+# define EXIT			'S'
+#endif
+
+#ifndef NORTH
+# define NORTH			(10)
+#endif
+
+#ifndef SOUTH
+# define SOUTH			(11)
+#endif
+
+#ifndef EAST
+# define EAST			(12)
+#endif
+
+#ifndef WEST
+# define WEST			(13)
+#endif
+
+/*
+** -- Misc --
+*/
+
+int				format(int fd, char *str, ...);
+int				my_atoi(char *str);
+int				put_fd(int fd, char *string);
+int				put_nb(int fd, int nb);
+void				*p_error(char *str);
+int				str_len(char *string);
+char				*str_dup(char *string);
+void				init_random(void);
+unsigned int			super_random(void);
+void				*xmalloc(unsigned int size);
+char				*get_next_line(const int fd);
+int				my_strcmp(char *s1, char *s2);
+
+/*
+** -- Loading--
+*/
+
+char				**load_map(char *filename, int *size_x,
+					   int *size_y);
+
+/*
+** -- Solve --
+*/
+
+t_list				*solve_maze(t_map *map);
+int				get_pos_x(int x, int direction);
+int				get_pos_y(int y, int direction);
+t_list				*find_path(t_node *open,
+					   t_node *closed, t_node *selected);
+int				heuristic(int pos_x, int pos_y);
+void				disp_map(char **map);
+
+/*
+** -- List --
+*/
+
+void				disp_node(t_node *node);
+void				change_node(t_node *node, t_node new);
+void				add_node(t_node **node, t_node new);
+void				add_to_list(t_list **list, int x, int y);
+void				add_end_list(t_list **list, int x, int y);
+void				disp_list(t_list *list);
+void				switch_list(t_node **close, t_node **open,
+					    t_node *selected);
+t_node				*get_node(t_node *node, t_node new);
+t_node			*get_lower_node(t_node *open);
+
+/*
+** -- Clean --
+*/
+
+void				clean_map(char **map);
+void				clean_node(t_node *list);
+void				clean_list(t_list *list);
+
+/*
+** -- Fill --
+*/
+
+void				fill_map(char **map, t_list *list,
+					 int *counter);
+void				empty_map(char **map);
+
+/*
+** -- Args --
+*/
+
+int				print_usage();
+int				check_args(int ac, char **av, bool *color,
+					   bool *count);
+
+/*
+** Verif
+*/
+
+int				is_in_list(t_node *list, int x, int y);
+int				is_possible(t_node *open, t_map *map,
+					    int direction, t_pos *pos);
+
+#endif
