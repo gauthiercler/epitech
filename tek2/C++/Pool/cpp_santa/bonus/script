@@ -1,0 +1,48 @@
+#!/usr/bin/env bash
+
+#sudo apt-get install sox
+#sudo apt-get install sox libsox-fmt-all
+
+if [ $# -eq 0 ]; then
+    echo "Please provide your binary as parameter"
+    exit 1
+fi
+
+./$1 > out.txt
+cat out.txt | while read line;
+do
+    echo $line
+    case $line in
+	*"tuuuut tuuut tuut"*)
+	    play effects/tuturu.mp3 &> /dev/null &
+	    timeout 2s display images/ppap.jpeg &
+	    ;;
+	*"yo man"*)
+	    play effects/yoMan.mp3 &> /dev/null &
+	    timeout 2s display images/yoMan.png &
+	    ;;
+	*"gra hu"*)
+	    play effects/grr.mp3 &> /dev/null &
+	    timeout 2s display images/grr.jpg &
+	    ;;
+	*"whistles while working"*)
+	    play effects/sifflement.mp3 &> /dev/null &
+	    timeout 3s display images/packing.jpg &
+	    sleep 2
+	    ;;
+	*"A little children will be very happy"*)
+	    play effects/santa.mp3 &> /dev/null &
+	    timeout 4s display images/present.png &
+	    sleep 2
+	    ;;
+	*"I can't wrap without a WRAPPER AND AN OBJECT !"*)
+	    play effects/fuck.mp3 &> /dev/null &
+	    timeout 9s display images/fuck.jpeg &
+	    sleep 7
+	    ;;
+    esac
+    sleep 2
+done
+
+rm out.txt
+exit 0
