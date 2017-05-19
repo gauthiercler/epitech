@@ -1,0 +1,8 @@
+>
+> titi
+> toto ls ; cat toto
+> ls
+ls > toto ; cat toto
+touch toto ; ls > toto
+ls > /tmp
+ls > toto | ls

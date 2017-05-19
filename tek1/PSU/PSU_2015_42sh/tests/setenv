@@ -1,0 +1,10 @@
+setenv toto
+setenv toto titi
+setenv toto titi toto
+setenv toto= toto
+setenv toto_ toto
+setenv =toto titi
+setenv _toto titi
+setenv 2toto toto
+setenv TOTO titi ; env | grep TOTO ; setenv TOTO tata ; env | grep TOTO
+setenv PATH toto titi ; env | /usr/bin/grep PATH

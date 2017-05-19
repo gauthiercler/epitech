@@ -1,0 +1,8 @@
+ls && ls -l || ls
+ls && toto || ls
+ls || ls -l && ls
+ls || toto && ls
+||&&
+&&||
+ls || ls -l && cat /etc/host || ls -Rsa .
+ls && ls -l || cat /etc/host && ls -Rsa .

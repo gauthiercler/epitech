@@ -1,0 +1,35 @@
+exit
+exit 0
+exit -0
+exit abc
+exit 9abc
+exit abc9
+exit -1
+exit 255
+exit 256
+exit 257
+exit 511
+exit 512
+exit 513
+exit -255
+exit -256
+exit -257
+exit -511
+exit -512
+exit -513
+exit 000000000000000000
+exit 999999999999999999
+exit -000000000000000000
+exit -9999999999999999999
+exit 1 2 4
+exit 42
+exit -42
+exit a42
+exit 4a2
+exit 42a
+exit 0.3
+exit 32 abc
+exit abc 32
+exit ls
+exit | ls
+exit ; ls

@@ -1,0 +1,7 @@
+ls && ls -l
+ls -l &&
+&& ls -l
+&&
+toto && ls -l
+ls -l && toto
+toto && toto

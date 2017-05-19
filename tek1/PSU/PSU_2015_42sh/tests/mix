@@ -1,0 +1,4 @@
+cp ../42sh . ; cat 42sh | cat 42sh|head -n 1 > toto ; cat 42sh | cat 42sh|head -n 1 > tata; rm toto tata
+ls > toto ; cat < toto > raclette ; grep < raclette | cat -e | wc -l > toto ; ls > titi ; cat < titi > tutu ; grep < tutu i | cat -e | wc -l > toto
+> toto ls      -l ; echo oui > tutu ; cat < toto | grep i >> tutu ; ls -l /dev | grep tty | grep 3 >> tutu ; < tutu cat | grep t | > toto wc -c ; > tata ls      -l ; echo oui > titi ; cat < tata | grep i >> titi ; ls -l /dev | grep tty | grep 3 >> titi ; < titi cat | grep t | > tata wc -c; rm titi toto tutu tata
+touch titi; chmod 000 titi;  tr A a <titi | tr -cs a b | sort | uniq | comm -23 - /usr/share/dict/words

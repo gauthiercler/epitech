@@ -1,0 +1,6 @@
+pwd ; cd / ; pwd
+setenv HOME / ; cd
+cd /root
+cd /tmp/azertfzsdzaqdsq
+pwd ; cd / toto ; pwd
+pwd ; cd / ; pwd ; cd - ; pwd

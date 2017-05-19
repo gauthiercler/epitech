@@ -1,0 +1,9 @@
+|
+ls |
+ls | cat -e
+| ls |
+ls | cat -e | cat -e | cat -e | cat -e | cat -e | cat -e | cat -e | cat -e | cat -e | cat -e | cat -e | cat -e | cat -e | cat -e | cat -e | cat -e | cat -e | cat -e | cat -e | cat -e | cat -e | cat -e | cat -e | cat -e
+cat -e | ls
+ls -l | cat -e | grep test | cat
+ls | cat | cat | cat | grep test | cat | cat -e | grep testx
+cat -e | ls ; ps | grep cat; ps | grep ls

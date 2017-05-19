@@ -1,0 +1,12 @@
+echo simple
+echo toto\n
+echo toto\\n
+echo -n salut
+echo salut -n
+echo salut\rles\ramis
+echo salut\\rles\\ramis
+echo horizontal\ttab
+echo vertical\vtab
+echo -e hey\nlol
+echo $toto
+setenv toto titi ; echo $toto

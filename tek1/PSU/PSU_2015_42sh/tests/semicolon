@@ -1,0 +1,10 @@
+;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;ls;toto;
+;;toto;;ls
+ls;pwd;grep -r a
+ls -l ;;   ;  ; echo marsupilami
+ls -l;;echo marsupilami
+ls      -l      ;    echo          marsupilami
+ls -l;;echo marsupilami
+ls -l   ;echo marsupilami

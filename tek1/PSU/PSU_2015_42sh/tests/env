@@ -1,0 +1,2 @@
+setenv THIS_IS_A_ENV_TEST / ; env | /bin/grep THIS_IS_A_ENV_TEST
+unsetenv THIS_VARIABLE ; env | /bin/grep THIS_VARIABLE

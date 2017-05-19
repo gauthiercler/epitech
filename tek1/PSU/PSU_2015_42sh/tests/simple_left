@@ -1,0 +1,7 @@
+ls -l > toto; cat < toto -e
+<
+< toto
+< ls
+cat < /etc/host
+cat < /tmp
+touch toto ; chmod 000 toto ; cat < toto

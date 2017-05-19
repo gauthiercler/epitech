@@ -1,0 +1,4 @@
+unsetenv PATH ; env | /usr/bin/grep PATH
+unsetenv
+unsetenv PATH HOST; env |  /usr/bin/grep PATH ; env | /usr/bin/grep HOST
+setenv TITI ; env | grep TITI ; unsetenv TITI ; env | grep TITI

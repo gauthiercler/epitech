@@ -1,0 +1,12 @@
+ls -l > totopepito ; ls ; rm totopepito
+ls > totopepito -l ; rm totopepito
+> toto ls -l ; rm toto
+>toto ls ; tm toto
+ls -l>toto; rm toto
+ls -l> toto -R ; rm toto
+ls -l >> tutu ; rm tutu
+pwd >>>> test ; rm test
+>> titi ; rm titi
+cat -e << EOF
+ls <<< titi
+pwd >> < titi > out ; rm out

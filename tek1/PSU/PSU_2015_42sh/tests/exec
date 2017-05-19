@@ -1,0 +1,12 @@
+ls
+/bin/ls
+./ls
+/ls
+../../bin/ls
+../../ls
+touch toto ; chmod 000 toto ; ./toto ; rm toto
+./42sh ; exit
+/42sh
+42sh
+/bin/42sh
+ededfe

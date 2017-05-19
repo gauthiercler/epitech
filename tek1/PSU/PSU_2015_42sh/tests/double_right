@@ -1,0 +1,7 @@
+ls -l >> toto
+ls -l >> toto ; ls -l >> toto ; cat -e toto
+touch toto ; chmod 000 toto ; ls -l >> toto
+>>
+>> toto
+>> toto ls -l
+ls -l >> /tmp
