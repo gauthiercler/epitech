@@ -1,0 +1,11 @@
+#!/usr/bin/ruby
+
+require './classes/parser'
+require './classes/engine'
+require './classes/binomial_overload'
+
+parser = Parser.new(ARGV)
+compute_mode = parser.parse
+
+engine = Engine.new(compute_mode)
+engine.run

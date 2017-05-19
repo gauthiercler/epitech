@@ -1,0 +1,262 @@
+==================== Documentation LibTEKGUI ====================
+
+Réalisée par Gauthier CLER (cler_g) Epitech Lille Promo 2020
+
+===== Sommaire =====
+
+I - Tutoriel
+
+II - Manuel | objets
+
+===== Présentation =====
+
+Cette Librairie nommée libTEKGUI est issue d'un projet
+d'infographie d'Epitech. Elle est très utile
+pour la réalisation d'interfaces utilisateurs paramétrables.
+La libTEKGUI est basé sur la libLAPIN d'Epitech, les fonctions
+présentent dans celle ci sont très simples d'utilisation.
+
+===== I - Tutoriel =====
+
+Cette librairie permet de créer très facilement des interfaces
+utilisateurs sur mesure. Vous aurez le choix sur un vaste panel
+d'options disponibles.
+Par exemples: Des images, des zones de textes des formes, des
+bouton...
+Toute cette configuration sera mise en place par l'intermédiaire
+d'un fichier ini qui sera chargé au début du programme.
+Vous pourrez ensuite assigner des actions spécifiques à chaque
+élement de la fenêtre (effacer les champs de textes, quitter le
+programme...). 
+
+Afin de personaliser les mieux possible votre interface,
+il est fondamental de bien comprendre les fonctionnement des
+fichiers INI. en voici un exemple :
+
+*******************************************
+[nb_scope]
+nb=4
+elem=form_1, text_1, picture_1, button_1
+
+[form_1]
+type=form
+pos=10,100
+size=600,600
+color=255,204,153
+
+[text_1]
+type=text_box
+pos=30,130
+size=530,30
+color=255,255,255
+tcolor=204,0,0
+
+[picture_1]
+type=picture
+pos=800,0
+link=../bmp/picture.bmp
+
+[button_1]
+type=button
+pos=800,300
+size=40,40
+color=34,123,56
+action="reload"
+******************************************
+
+Ce fichier INI est découpé en plusieurs parties.
+Tout d'abord vous devrez définir un nombre de
+"scope" (premier champs) qui contiendra le nombre
+d'éléments et leur nom. Dans cet exemple, on définit
+Un scope [nb_scope] avec un champ nb qui vaut 4 et le
+nom des différents scopes dans le champ elem. Il est
+important de mettre les noms des éléments dans l'ordre
+d'affichage voulu (le premier s'affichera donc en premier).
+Ce scope est une constante, veillez donc bien à le nommer de
+la sorte sans quoi la lib ne détectera pas le reste du fichier
+ini (respectez aussi le nom des champs "nb" et "elem).
+
+Ensuite, pour les champs suivants, vous allez avoir une liste de
+types disponibles (voir Partie II pour plus d'informations)
+form => Crée une zone.
+picture => Charge une image.
+text_box => Crée une zone de texte éditabe en temps réel
+button => crée un bouton permettant de réaliser des actions.
+
+Une fois toute votre configuration mise en place, il faudra
+ensuite ajouter quelques lignes de codes à votre fichier C
+afin de charger l'interface. Les voici:
+
+******************************************************
+#include                "../include/tekgui.h"
+
+int                     main(int ac, char **av)
+{
+   t_prog                prog;
+
+   if (ac < 2)
+      return (write(1, "Need INI\n", 9));
+   if (tekgui_init(&prog, av[1], "../bmp/font.bmp") == 1)
+      return (0);
+   tekgui_display(prog.pix, prog.gui);
+   tekgui_loop(&prog);
+   return (0);
+}
+*******************************************************
+
+Tout d'abord définissez une variable de type t_prog
+représentant une structure contenant l'intégralité
+de l'interface.
+Appelez ensuite la fonction tekgui_init afin de charger
+dans la structure toute l'interface. En cas d'erreur,
+cette fonction renverra la valeur 1 (Pour toute information
+complémentaire au niveau des fonctions..., se référer à la
+section II - Manuel). Puis appelez la fonction tekgui_display
+qui affiche votre interface configuré et enfin la fonction
+tekgui_loop. Cette dernière va laissez la fenêtre active et
+gérera les différents évenements (boutons, textes..).
+NB: Ne pas oublier d'includre le Header (tekgui.h).
+
+Pour cliquer le programme, vous pouvez cliquez sur un bouton
+configuré (action "quit") ou en appuyant sur le touche ECHAP.
+
+===== II - Manuel =====
+
+Dans cette section vous pouvez retrouver toutes les informations
+concernant chaque aspect de la librairie que ce soit au niveau
+des fonctions, des actions et évènenements...
+
+=== Général ===
+
+- Les positions de la fenêtre sont représentés par un répère
+Inversé. Donc le coin en haut à gauche représente les coordonées
+X = 0 & Y = 0 (Y vertical et X horizontal)
+
+=== Champs ===
+
+type:
+==>	Type de l'élément, liste disponible plus bas.
+
+pos:
+==>	Positions de l'élément X puis Y séparés par une virgule.
+	
+size:
+==>	Taille de l'élement X puis Y séparés par une virgule.
+
+color:
+==>	Couleur de l'élement identifiée grâce aux 3 couleurs
+	RGB, séparés par une virgule.
+
+tcolor:
+==>	Couleur du texte de l'élément (ne s'applique qu'aux
+	zones de texte) identifiée grâce aux 3 couleurs RGB,
+	séparés par une virgule.
+
+link:
+==>	Lien de l'image à charger (ne s'applique que pour les
+	types "pitcure"). le lien doit partir de l'emplacement
+	du binaire (ex: "../bmp/ex.bmp") dans un dossier voisin.
+
+action:
+==>	Action pouvant être effectué lors d'un clic sur l'élement.
+	Liste des actions et explication approfondie dans la catégorie
+	"Action".
+
+=== Types ===
+
+form:
+==>	Dessine une zone sur l'écran avec un léger contour noir.
+	Champs obligatoires:
+	- pos
+	- size
+	- color
+
+text_box:
+==>	Crée une zone de texte qui sera activable ou désactivable
+	lors d'un clic sur celle ci. Lorsqu'elle est activée.
+	L'utilisateur peut entrer son texte à l'aide des touches
+	du clavier.
+	Champs obligatoires:
+	- pos	
+	- size	
+	- color	
+	- tcolor
+
+picture:
+==>	Charge une image à la position donnée. L'image doit être
+	au format 32 bits.
+	Champs obligatoires:
+	- pos
+	- link
+
+button
+==>	Crée un bouton effectuant l'action défini dans le champs action
+	lors d'un clic sur celui ci.
+	Champs obligatoires:
+	- pos
+	- size
+	- color
+	- action
+
+=== Action ===
+
+Il existe 2 types d'actions, les actions sans et avec arguments.
+Pour les actions avec arguments, veuillez séparer l'action de l'argument
+d'un espace.
+Ex: action="invert picture_1"
+
+reload
+==>	Action sans argument.
+	Recharge l'interface et efface tout les zones de texte remplies.
+
+invert
+==>	Action prenant en argument le nom de l'élement ciblé. L'élement
+	doit être du type "picture"
+	Inverse les composantes R et B de l'image ciblée.
+
+quit
+==>	Action sans argument.
+	Quitte le programme.
+
+=== Fonctions ===
+
+int	tekgui_init(t_prog *prog, char *ini_path, char *font_path);
+
+Charge dans prog l'interface TEKGUI.
+Elle prend en paramètre:
+			- Un pointeur sur la structure de type t_prog
+			- le chemin relatif du fichier INI à charger
+			- le chemin relatif de la police d'écriture à charger
+			 (au format bmp)
+
+Retourne 1 en cas d'erreur ou 0 lors d'un succès
+
+=================================================================================
+
+void	tekgui_display(t_bunny_pixelarray *pix, t_tekgui *interface)
+
+Affiche l'interface stocké dans la structure t_tekgui dans le tableau de pixel pix.
+Elle prend en paramètre:
+			- un pointeur sur un tableau de pixel
+			- un tableau de structure del'interface TEKGUI
+
+Ces deux élements sont stockés dans la structure t_prog.
+Voici un exemple d'utilisation de la fonction:
+      tekgui_display(prog.pix, prog.gui);
+
+Pas de valeur de retour
+
+=================================================================================
+
+void	tekgui_loop(t_prog *prog);
+
+Crée une boucle d'évenements à partir du pointeur de structure t_prog.
+Cette fonction nécessaire à ce que le programme ne s'arrête pas.
+Elle prend en paramètre:
+			- Un pointeur sur la structure t_prog
+
+Pas de valeur de retour
+
+=================================================================================
+
+Gauthier CLER 2016

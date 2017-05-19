@@ -1,0 +1,39 @@
+#!/usr/bin/ruby
+$*.size!=2&&exit(84)
+$*.map{|a|!(a=~/^\d+$/)&&exit(84)}
+((a=$*[0].to_f)<51||(b=$*[1].to_f)<51)&&exit(84)
+def c(a,b,x,y)(a-x)*(b-y)/((5*a-150).*5*b-150)end
+def m(a,b)a.zip(b).map{|x|x.inject(:+)}end
+def l;puts ?-*40end;l
+j=10;f='%.3f';g="\t"
+d=[];v=[];w=[0,0,0,0,0];x=j
+(0..4).map{y=j;e=[];(0..4).map{e<<c(a,b,x,y);y+=j};d<<e;w=m(w,e);v<<e.inject(:+);x+=j}
+o=p=q=0;x=y=j
+v.map{|z|o+=z*x;x+=j}
+x=j;w.map{|z|p+=z*x;x+=j}
+$><<g;x=j;(0..4).map{$><<"X=#{x}\t";x+=j};puts "Y law"
+(0..4).map{$><<"Y=#{y}\t";i=0;(0..4).map{$><<f%d[i][y/j-1];$><<g;i+=1};puts f%w[y/j-1];y+=j;}
+$><<"X law\t";v.map{|x|$><<f%x+g};puts v.inject(:+).round
+l
+i=n=0;z=[]
+while i<5&&n<5;r=0;k=i;a=n
+while k>=0&&a<5;r+=d[k][a];k-=1;a+=1
+end;i+1==5?n+=1:i+=1;z.push r;end
+x=20;z.map{|z|q+=z*x;x+=j}
+e=[0,0,0]
+x=j
+v.map{|i|e[0]+=((x-o)**2)*i;x+=j}
+x=j
+w.map{|i|e[1]+=((x-p)**2)*i;x+=j}
+x=j*2
+i=0
+z.map{|i|e[2]+=((x-q)**2)*i;x+=j}
+x=j*2
+$><<"z\t";(0..8).map{$><<x.to_s+g;x+=j};puts "total"
+$><<"p(Z=z)\t";(0..8).map{$><<f%z[i]+g;i+=1};puts z.inject(:+).round
+l
+f='%.1f'
+a=c=0
+b=["X","Y","Z"]
+d=[o,p,q]
+(0..5).map{a%2!=0?(puts "variance of #{b[c]}:\t\t"+f%e[c]):(puts "expected value of #{b[c]}:\t"+f%d[c]);a+=1;(a%2==0)?c+=1:0}
