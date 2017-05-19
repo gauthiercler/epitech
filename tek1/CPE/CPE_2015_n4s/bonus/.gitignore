@@ -1,0 +1,5 @@
+*.o
+*~
+\#*\#
+ia
+.clang_complete
