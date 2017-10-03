@@ -1,0 +1,7 @@
+.idea
+cmake-build-debug
+server
+mouli_myftp_student
+*.o
+*~
+\#*#
