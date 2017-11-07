@@ -1,0 +1,434 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
+<title>README.md</title><link href='https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700,700italic&subset=latin,cyrillic-ext,cyrillic,latin-ext' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}.CodeMirror { height: auto; }
+.CodeMirror-scroll { overflow-y: hidden; overflow-x: auto; }
+.CodeMirror-lines { padding: 4px 0px; }
+.CodeMirror pre { }
+.CodeMirror-scrollbar-filler, .CodeMirror-gutter-filler { background-color: white; }
+.CodeMirror-gutters { border-right: 1px solid rgb(221, 221, 221); background-color: rgb(247, 247, 247); white-space: nowrap; }
+.CodeMirror-linenumbers { }
+.CodeMirror-linenumber { padding: 0px 3px 0px 5px; text-align: right; color: rgb(153, 153, 153); }
+.CodeMirror div.CodeMirror-cursor { border-left: 1px solid black; z-index: 3; }
+.CodeMirror div.CodeMirror-secondarycursor { border-left: 1px solid silver; }
+.CodeMirror.cm-keymap-fat-cursor div.CodeMirror-cursor { width: auto; border: 0px; background: rgb(119, 238, 119); z-index: 1; }
+.CodeMirror div.CodeMirror-cursor.CodeMirror-overwrite { }
+.cm-tab { display: inline-block; }
+.cm-s-typora-default .cm-header, .cm-s-typora-default .cm-property { color: rgb(217, 79, 138); }
+.cm-s-typora-default pre.cm-header1:not(.cm-atom) :not(.cm-overlay) { font-size: 2rem; line-height: 2rem; }
+.cm-s-typora-default pre.cm-header2:not(.cm-atom) :not(.cm-overlay) { font-size: 1.4rem; line-height: 1.4rem; }
+.cm-s-typora-default .cm-atom, .cm-s-typora-default .cm-number { color: rgb(149, 132, 134); }
+.cm-s-typora-default .cm-table-row, .cm-s-typora-default .cm-block-start { font-family: monospace; }
+.cm-s-typora-default .cm-comment, .cm-s-typora-default .cm-code { color: rgb(74, 90, 159); font-family: monospace; }
+.cm-s-typora-default .cm-tag { color: rgb(169, 68, 66); }
+.cm-s-typora-default .cm-string { color: rgb(126, 134, 169); }
+.cm-s-typora-default .cm-link { color: rgb(196, 122, 15); text-decoration: underline; }
+.cm-s-typora-default .cm-variable-2, .cm-s-typora-default .cm-variable-1 { color: inherit; }
+.cm-s-typora-default .cm-overlay { font-family: monospace; }
+.CodeMirror.cm-s-typora-default div.CodeMirror-cursor { border-left: 3px solid rgb(228, 98, 154); }
+.cm-s-typora-default .CodeMirror-activeline-background { left: -60px; right: -30px; background: rgba(204, 204, 204, 0.2); }
+.cm-s-typora-default .CodeMirror-gutters { border-right: none; background-color: inherit; }
+.cm-s-typora-default .cm-trailing-space-new-line::after, .cm-startspace::after, .cm-starttab .cm-tab::after { content: "•"; position: absolute; left: 0px; opacity: 0; font-family: LetterGothicStd, monospace; }
+.os-windows .cm-startspace::after, .os-windows .cm-starttab .cm-tab::after { left: -0.1em; }
+.cm-starttab .cm-tab::after { content: " "; }
+.cm-startspace, .cm-tab, .cm-starttab, .cm-trailing-space-a, .cm-trailing-space-b, .cm-trailing-space-new-line { font-family: monospace; position: relative; }
+.cm-s-typora-default .cm-trailing-space-new-line::after { content: "↓"; opacity: 0.3; }
+.cm-s-inner .cm-keyword { color: rgb(119, 0, 136); }
+.cm-s-inner .cm-atom, .cm-s-inner.cm-atom { color: rgb(34, 17, 153); }
+.cm-s-inner .cm-number { color: rgb(17, 102, 68); }
+.cm-s-inner .cm-def { color: rgb(0, 0, 255); }
+.cm-s-inner .cm-variable { color: black; }
+.cm-s-inner .cm-variable-2 { color: rgb(0, 85, 170); }
+.cm-s-inner .cm-variable-3 { color: rgb(0, 136, 85); }
+.cm-s-inner .cm-property { color: black; }
+.cm-s-inner .cm-operator { color: rgb(152, 26, 26); }
+.cm-s-inner .cm-comment, .cm-s-inner.cm-comment { color: rgb(170, 85, 0); }
+.cm-s-inner .cm-string { color: rgb(170, 17, 17); }
+.cm-s-inner .cm-string-2 { color: rgb(255, 85, 0); }
+.cm-s-inner .cm-meta { color: rgb(85, 85, 85); }
+.cm-s-inner .cm-qualifier { color: rgb(85, 85, 85); }
+.cm-s-inner .cm-builtin { color: rgb(51, 0, 170); }
+.cm-s-inner .cm-bracket { color: rgb(153, 153, 119); }
+.cm-s-inner .cm-tag { color: rgb(17, 119, 0); }
+.cm-s-inner .cm-attribute { color: rgb(0, 0, 204); }
+.cm-s-inner .cm-header, .cm-s-inner.cm-header { color: blue; }
+.cm-s-inner .cm-quote, .cm-s-inner.cm-quote { color: rgb(0, 153, 0); }
+.cm-s-inner .cm-hr, .cm-s-inner.cm-hr { color: rgb(153, 153, 153); }
+.cm-s-inner .cm-link, .cm-s-inner.cm-link { color: rgb(0, 0, 204); }
+.cm-negative { color: rgb(221, 68, 68); }
+.cm-positive { color: rgb(34, 153, 34); }
+.cm-header, .cm-strong { font-weight: bold; }
+.cm-del { text-decoration: line-through; }
+.cm-em { font-style: italic; }
+.cm-link { text-decoration: underline; }
+.cm-error { color: rgb(255, 0, 0); }
+.cm-invalidchar { color: rgb(255, 0, 0); }
+.cm-constant { color: rgb(38, 139, 210); }
+.cm-defined { color: rgb(181, 137, 0); }
+div.CodeMirror span.CodeMirror-matchingbracket { color: rgb(0, 255, 0); }
+div.CodeMirror span.CodeMirror-nonmatchingbracket { color: rgb(255, 34, 34); }
+.cm-s-inner .CodeMirror-activeline-background { background: inherit; }
+.CodeMirror { position: relative; overflow: hidden; }
+.CodeMirror-scroll { margin-bottom: -30px; margin-right: -30px; padding-bottom: 30px; padding-right: 30px; height: 100%; outline: none; position: relative; box-sizing: content-box; }
+.CodeMirror-sizer { position: relative; }
+.CodeMirror-vscrollbar, .CodeMirror-hscrollbar, .CodeMirror-scrollbar-filler, .CodeMirror-gutter-filler { position: absolute; z-index: 6; display: none; }
+.CodeMirror-vscrollbar { right: 0px; top: 0px; overflow-x: hidden; overflow-y: scroll; }
+.CodeMirror-hscrollbar { bottom: 0px; left: 0px; overflow-y: hidden; overflow-x: scroll; }
+.CodeMirror-scrollbar-filler { right: 0px; bottom: 0px; }
+.CodeMirror-gutter-filler { left: 0px; bottom: 0px; }
+.CodeMirror-gutters { position: absolute; left: 0px; top: 0px; padding-bottom: 30px; z-index: 3; }
+.CodeMirror-gutter { white-space: normal; height: 100%; box-sizing: content-box; padding-bottom: 30px; margin-bottom: -32px; display: inline-block; }
+.CodeMirror-gutter-wrapper { position: absolute; z-index: 4; background: none !important; border: none !important; }
+.CodeMirror-gutter-background { position: absolute; top: 0px; bottom: 0px; z-index: 4; }
+.CodeMirror-gutter-elt { position: absolute; cursor: default; z-index: 4; }
+.CodeMirror-lines { cursor: text; }
+.CodeMirror pre { border-radius: 0px; border-width: 0px; background: transparent; font-family: inherit; font-size: inherit; margin: 0px; white-space: pre; word-wrap: normal; color: inherit; z-index: 2; position: relative; overflow: visible; }
+.CodeMirror-wrap pre { word-wrap: break-word; white-space: pre-wrap; word-break: normal; }
+.CodeMirror-code pre { border-right: 30px solid transparent; width: fit-content; }
+.CodeMirror-wrap .CodeMirror-code pre { border-right: none; width: auto; }
+.CodeMirror-linebackground { position: absolute; left: 0px; right: 0px; top: 0px; bottom: 0px; z-index: 0; }
+.CodeMirror-linewidget { position: relative; z-index: 2; overflow: auto; }
+.CodeMirror-widget { }
+.CodeMirror-wrap .CodeMirror-scroll { overflow-x: hidden; }
+.CodeMirror-measure { position: absolute; width: 100%; height: 0px; overflow: hidden; visibility: hidden; }
+.CodeMirror-measure pre { position: static; }
+.CodeMirror div.CodeMirror-cursor { position: absolute; visibility: hidden; border-right: none; width: 0px; }
+.CodeMirror div.CodeMirror-cursor { visibility: hidden; }
+.CodeMirror-focused div.CodeMirror-cursor { visibility: inherit; }
+.CodeMirror-selected { background: rgb(217, 217, 217); }
+.CodeMirror-focused .CodeMirror-selected { background: rgb(215, 212, 240); }
+.cm-searching { background: rgba(255, 255, 0, 0.4); }
+.CodeMirror span { }
+@media print {
+  .CodeMirror div.CodeMirror-cursor { visibility: hidden; }
+}
+.CodeMirror-lint-markers { width: 16px; }
+.CodeMirror-lint-tooltip { background-color: infobackground; border: 1px solid black; border-radius: 4px; color: infotext; font-family: monospace; overflow: hidden; padding: 2px 5px; position: fixed; white-space: pre-wrap; z-index: 10000; max-width: 600px; opacity: 0; transition: opacity 0.4s; font-size: 0.8em; }
+.CodeMirror-lint-mark-error, .CodeMirror-lint-mark-warning { background-position: left bottom; background-repeat: repeat-x; }
+.CodeMirror-lint-mark-error { background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAYAAAC09K7GAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9sJDw4cOCW1/KIAAAAZdEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIEdJTVBXgQ4XAAAAHElEQVQI12NggIL/DAz/GdA5/xkY/qPKMDAwAADLZwf5rvm+LQAAAABJRU5ErkJggg=="); }
+.CodeMirror-lint-marker-error, .CodeMirror-lint-marker-warning { background-position: center center; background-repeat: no-repeat; cursor: pointer; display: inline-block; height: 16px; width: 16px; vertical-align: middle; position: relative; }
+.CodeMirror-lint-message-error, .CodeMirror-lint-message-warning { padding-left: 18px; background-position: left top; background-repeat: no-repeat; }
+.CodeMirror-lint-marker-error, .CodeMirror-lint-message-error { background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAHlBMVEW7AAC7AACxAAC7AAC7AAAAAAC4AAC5AAD///+7AAAUdclpAAAABnRSTlMXnORSiwCK0ZKSAAAATUlEQVR42mWPOQ7AQAgDuQLx/z8csYRmPRIFIwRGnosRrpamvkKi0FTIiMASR3hhKW+hAN6/tIWhu9PDWiTGNEkTtIOucA5Oyr9ckPgAWm0GPBog6v4AAAAASUVORK5CYII="); }
+.CodeMirror-lint-marker-warning, .CodeMirror-lint-message-warning { background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAANlBMVEX/uwDvrwD/uwD/uwD/uwD/uwD/uwD/uwD/uwD6twD/uwAAAADurwD2tQD7uAD+ugAAAAD/uwDhmeTRAAAADHRSTlMJ8mN1EYcbmiixgACm7WbuAAAAVklEQVR42n3PUQqAIBBFUU1LLc3u/jdbOJoW1P08DA9Gba8+YWJ6gNJoNYIBzAA2chBth5kLmG9YUoG0NHAUwFXwO9LuBQL1giCQb8gC9Oro2vp5rncCIY8L8uEx5ZkAAAAASUVORK5CYII="); }
+.CodeMirror-lint-marker-multiple { background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAMAAADzjKfhAAAACVBMVEUAAAAAAAC/v7914kyHAAAAAXRSTlMAQObYZgAAACNJREFUeNo1ioEJAAAIwmz/H90iFFSGJgFMe3gaLZ0od+9/AQZ0ADosbYraAAAAAElFTkSuQmCC"); background-repeat: no-repeat; background-position: right bottom; width: 100%; height: 100%; }
+
+
+:root { --bg-color: #ffffff; --text-color: #333333; --code-block-bg-color: inherit; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+body { margin: 0px; padding: 0px; height: auto; bottom: 0px; top: 0px; left: 0px; right: 0px; font-size: 1rem; line-height: 1.42857; overflow-x: hidden; background: inherit; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { background: rgb(181, 214, 252); text-shadow: none; }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; word-wrap: break-word; position: relative; padding-bottom: 70px; white-space: pre-wrap; overflow-x: visible; contain: content; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+@media screen and (max-width: 500px) {
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  .CodeMirror-sizer { margin-left: 0px !important; }
+  .CodeMirror-gutters { display: none !important; }
+}
+.typora-export #write { margin: 0px auto; }
+#write > p:first-child, #write > ul:first-child, #write > ol:first-child, #write > pre:first-child, #write > blockquote:first-child, #write > div:first-child, #write > table:first-child { margin-top: 30px; }
+#write li > table:first-child { margin-top: -20px; }
+img { max-width: 100%; vertical-align: middle; }
+input, button, select, textarea { color: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+::before, ::after, * { box-sizing: border-box; }
+#write p, #write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write div, #write pre { width: inherit; }
+#write p, #write h1, #write h2, #write h3, #write h4, #write h5, #write h6 { position: relative; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+p { -webkit-margin-before: 1rem; -webkit-margin-after: 1rem; -webkit-margin-start: 0px; -webkit-margin-end: 0px; }
+.typora-export p { white-space: normal; }
+.mathjax-block { margin-top: 0px; margin-bottom: 0px; -webkit-margin-before: 0rem; -webkit-margin-after: 0rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: bold; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.701961); color: rgb(85, 85, 85); border-radius: 4px; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; margin: 4px 0px 0px; }
+tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 80px; }
+.CodeMirror-gutters { border-right: 0px; background-color: inherit; }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+pre { white-space: pre-wrap; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background: var(--code-block-bg-color); position: relative !important; }
+.md-diagram-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+.md-fences .CodeMirror.CodeMirror-wrap { top: -1.6em; margin-bottom: -1.6em; }
+.md-fences.mock-cm { white-space: pre-wrap; }
+.show-fences-line-number .md-fences { padding-left: 0px; }
+.show-fences-line-number .md-fences.mock-cm { padding-left: 40px; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; padding-top: 1em; padding-bottom: 1em; }
+.footnotes + .footnotes { margin-top: -1em; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; background: transparent; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; -webkit-tap-highlight-color: transparent; line-height: normal; font-weight: normal; text-align: left; box-sizing: content-box; direction: ltr; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li p, li .mathjax-block { margin: 0.5rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; }
+@media print {
+  html, body { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; }
+  .typora-export * { -webkit-print-color-adjust: exact; }
+  h1, h2, h3, h4, h5, h6 { break-after: avoid-page; orphans: 2; }
+  p { orphans: 4; }
+  html.blink-to-pdf { font-size: 13px; }
+  .typora-export #write { padding-left: 1cm; padding-right: 1cm; padding-bottom: 0px; break-after: avoid; }
+  .typora-export #write::after { height: 0px; }
+  @page { margin: 20mm 0mm; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 2.86rem; white-space: pre-wrap; background: rgb(204, 204, 204); display: block; overflow-x: hidden; }
+p .md-image:only-child { display: inline-block; width: 100%; text-align: center; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.mathjax-block { white-space: pre; overflow: hidden; width: 100%; }
+p + .mathjax-block { margin-top: -1.143rem; }
+.mathjax-block:not(:empty)::after { display: none; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus { outline: none; box-shadow: none; }
+.task-list { list-style-type: none; }
+.task-list-item { position: relative; padding-left: 1em; }
+.task-list-item input { position: absolute; top: 0px; left: 0px; }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc::after, .md-toc-content::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: bold; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) {
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+.md-tag { opacity: 0.5; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.8; font-family: monospace; }
+code { text-align: left; }
+h1 .md-tag, h2 .md-tag, h3 .md-tag, h4 .md-tag, h5 .md-tag, h6 .md-tag { font-weight: initial; opacity: 0.35; }
+a.md-print-anchor { border-width: initial !important; border-style: none !important; border-color: initial !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: none !important; background: transparent !important; text-decoration: initial !important; text-shadow: initial !important; }
+.md-inline-math .MathJax_SVG .noError { display: none !important; }
+.mathjax-block .MathJax_SVG_Display { text-align: center; margin: 1em 0em; position: relative; text-indent: 0px; max-width: none; max-height: none; min-height: 0px; min-width: 100%; width: auto; display: block !important; }
+.MathJax_SVG_Display, .md-inline-math .MathJax_SVG_Display { width: auto; margin: inherit; display: inline-block !important; }
+.MathJax_SVG .MJX-monospace { font-family: monospace; }
+.MathJax_SVG .MJX-sans-serif { font-family: sans-serif; }
+.MathJax_SVG { display: inline; font-style: normal; font-weight: normal; line-height: normal; zoom: 90%; text-indent: 0px; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0px; min-height: 0px; border: 0px; padding: 0px; margin: 0px; }
+.MathJax_SVG * { transition: none; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; }
+
+
+@font-face { font-family: "PT Serif"; font-style: normal; font-weight: normal; src: local("PT Serif"), local("PTSerif-Regular"), url("./newsprint/PT_Serif-Web-Regular.ttf"); }
+@font-face { font-family: "PT Serif"; font-style: italic; font-weight: normal; src: local("PT Serif"), local("PTSerif-Italic"), url("./newsprint/PT_Serif-Web-Italic.ttf"); }
+@font-face { font-family: "PT Serif"; font-style: normal; font-weight: bold; src: local("PT Serif"), local("PTSerif-Bold"), url("./newsprint/PT_Serif-Web-Bold.ttf"); }
+@font-face { font-family: "PT Serif"; font-style: italic; font-weight: bold; src: local("PT Serif"), local("PTSerif-BoldItalic"), url("./newsprint/PT_Serif-Web-BoldItalic.ttf"); }
+:root { --active-file-bg-color: rgba(32, 43, 51, 0.63); --active-file-text-color: white; --bg-color: #f3f2ee; --text-color: #1f0909; }
+html { font-size: 16px; }
+html, body { background-color: rgb(243, 242, 238); font-family: "PT Serif", "Times New Roman", Times; color: rgb(31, 9, 9); line-height: 1.5em; }
+#write { max-width: 40em; }
+ol, ul { list-style: none; }
+blockquote, q { quotes: none; }
+blockquote::before, blockquote::after, q::before, q::after { content: none; }
+table { border-collapse: collapse; border-spacing: 0px; }
+h1, h2, h3, h4, h5, h6 { font-weight: bold; }
+h1 { font-size: 1.875em; line-height: 1.6em; margin-top: 2em; }
+h2, h3 { font-size: 1.3125em; line-height: 1.15; margin-top: 2.28571em; margin-bottom: 1.15em; }
+h3 { font-weight: normal; }
+h4 { font-size: 1.125em; margin-top: 2.67em; }
+h5, h6 { font-size: 1em; }
+h1 { border-bottom: 1px solid; margin-bottom: 1.875em; padding-bottom: 0.8125em; }
+a { text-decoration: none; color: rgb(6, 85, 136); }
+a:hover, a:active { text-decoration: underline; }
+p, blockquote, .md-fences { margin-bottom: 1.5em; }
+h1, h2, h3, h4, h5, h6 { margin-bottom: 1.5em; }
+blockquote { font-style: italic; border-left: 5px solid; margin-left: 2em; padding-left: 1em; }
+ul, ol { margin: 0px 0px 1.5em 1.5em; }
+ol li { list-style-type: decimal; list-style-position: outside; }
+ul li { list-style-type: disc; list-style-position: outside; }
+.md-meta, .md-before, .md-after { color: rgb(153, 153, 153); }
+table { margin-bottom: 1.5em; font-size: 1em; }
+thead th, tfoot th { padding: 0.25em 0.25em 0.25em 0.4em; text-transform: uppercase; }
+th { text-align: left; }
+td { vertical-align: top; padding: 0.25em 0.25em 0.25em 0.4em; }
+code, .md-fences { background-color: rgb(218, 218, 218); padding-left: 1ch; padding-right: 1ch; }
+.md-fences { margin-left: 2em; margin-bottom: 3em; }
+.md-fences .CodeMirror.CodeMirror-wrap { top: -0.8em; }
+pre, code, tt { font-size: 0.875em; line-height: 1.71429em; }
+h1 { line-height: 1.3em; font-weight: normal; margin-bottom: 0.5em; }
+p + ul, p + ol { margin-top: -1em; }
+h3 + ul, h4 + ul, h5 + ul, h6 + ul, h3 + ol, h4 + ol, h5 + ol, h6 + ol { margin-top: 0.5em; }
+li > ul, li > ol { margin-top: inherit; }
+h2, h3 { margin-bottom: 0.75em; }
+hr { border-top: none; border-right: none; border-bottom: 1px solid; border-left: none; }
+h1 { border-color: rgb(197, 197, 197); }
+blockquote { border-color: rgb(186, 186, 186); color: rgb(101, 101, 101); }
+thead.md-table-edit { background-color: transparent; }
+thead { background-color: rgb(218, 218, 218); }
+tr:nth-child(2n) { background: rgb(232, 231, 231); }
+hr { border-color: rgb(197, 197, 197); }
+.task-list { padding-left: 1rem; }
+.task-list-item { padding-left: 1.5rem; list-style-type: none; }
+.task-list-item input::before { content: "√"; display: inline-block; width: 1.25rem; height: 1.6rem; vertical-align: middle; text-align: center; color: rgb(221, 221, 221); background-color: rgb(243, 242, 238); }
+.task-list-item input:checked::before, .task-list-item input[checked]::before { color: inherit; }
+#write pre.md-meta-block { min-height: 1.875rem; color: rgb(85, 85, 85); border: 0px; background: transparent; margin-left: 1em; margin-top: 1em; }
+.md-image > .md-meta { color: rgb(155, 81, 70); }
+.md-image > .md-meta { font-family: Menlo, "Ubuntu Mono", Consolas, "Courier New", "Microsoft Yahei", "Hiragino Sans GB", "WenQuanYi Micro Hei", sans-serif; }
+#write > h3.md-focus::before { left: -1.5rem; color: rgb(153, 153, 153); border-color: rgb(153, 153, 153); }
+#write > h4.md-focus::before { left: -1.5rem; top: 0.25rem; color: rgb(153, 153, 153); border-color: rgb(153, 153, 153); }
+#write > h5.md-focus::before { left: -1.5rem; color: rgb(153, 153, 153); border-color: rgb(153, 153, 153); }
+#write > h6.md-focus::before { left: -1.5rem; top: 0.3125rem; color: rgb(153, 153, 153); border-color: rgb(153, 153, 153); }
+.md-toc:focus .md-toc-content { margin-top: 19px; }
+.md-toc-content:empty::before { color: rgb(6, 85, 136); }
+.md-toc-item { color: rgb(6, 85, 136); }
+#write div.md-toc-tooltip { background-color: rgb(243, 242, 238); }
+#typora-sidebar { background-color: rgb(243, 242, 238); box-shadow: rgba(0, 0, 0, 0.372549) 0px 6px 12px; }
+.pin-outline #typora-sidebar { background: inherit; box-shadow: none; border-right: 1px dashed; }
+.pin-outline #typora-sidebar:hover .outline-title-wrapper { border-left: 1px dashed; }
+.outline-item:hover { background-color: rgb(218, 218, 218); border-left: 28px solid rgb(218, 218, 218); border-right: 18px solid rgb(218, 218, 218); }
+.typora-node .outline-item:hover { border-right: 28px solid rgb(218, 218, 218); }
+.outline-expander::before { content: ""; font-family: FontAwesome; font-size: 14px; top: 1px; }
+.outline-expander:hover::before, .outline-item-open > .outline-item > .outline-expander::before { content: ""; }
+.modal-content { background-color: rgb(243, 242, 238); }
+.auto-suggest-container ul li { list-style-type: none; }
+.megamenu-menu, #top-titlebar, #top-titlebar *, .megamenu-content { background: rgb(243, 242, 238); color: rgb(31, 9, 9); }
+.megamenu-menu-header { border-bottom: 1px dashed rgb(32, 43, 51); }
+.megamenu-menu { box-shadow: none; border-right: 1px dashed; }
+header, .context-menu, .megamenu-content, footer { font-family: "PT Serif", "Times New Roman", Times; color: rgb(31, 9, 9); }
+#megamenu-back-btn { color: rgb(31, 9, 9); border-color: rgb(31, 9, 9); }
+.megamenu-menu-header #megamenu-menu-header-title::before { color: rgb(31, 9, 9); }
+.megamenu-menu-list li a:hover, .megamenu-menu-list li a.active { color: inherit; background-color: rgb(232, 231, 223); }
+.long-btn:hover { background-color: rgb(232, 231, 223); }
+#recent-file-panel tbody tr:nth-child(2n-1) { background-color: transparent !important; }
+.megamenu-menu-panel tbody tr:hover td:nth-child(2) { color: inherit; }
+.megamenu-menu-panel .btn { background-color: rgb(210, 209, 209); }
+.btn-default { background-color: transparent; }
+.typora-sourceview-on #toggle-sourceview-btn, .show-word-count #footer-word-count { background: rgb(199, 197, 197); }
+#typora-quick-open { background-color: inherit; }
+.md-diagram-panel { margin-left: -1ch; margin-top: 24px; }
+.file-list-item-file-name { font-weight: initial; }
+.file-list-item-summary { opacity: 1; }
+.file-list-item { color: rgb(119, 119, 119); }
+.file-list-item.active { background-color: inherit; color: black; }
+.file-list-item.active .file-list-item-file-name { font-weight: bold; }
+.file-list-item { opacity: 1 !important; }
+.file-library-node.active > .file-node-background { background-color: var(--active-file-bg-color); }
+.file-tree-node.active > .file-node-content { color: var(--active-file-text-color); }
+
+
+
+
+
+
+</style>
+</head>
+<body class='typora-export' >
+<div  id='write'  class = 'is-node'><h1><a name='header-n28210' class='md-header-anchor '></a>Area API Documentation</h1><p><strong>Anas Buyumad, Antoine Foret, Gauthier Cler, Valentin Montagne and Vincent Dusautoir students of Epitech Lille are proud to present <del>THE MARAUDER&#39;S MAP</del> the AREA Project</strong></p><h2><a name='header-n28215' class='md-header-anchor '></a>Its Goal</h2><hr /><p>The Area is a project whose goal is to propose a <strong>simple interface</strong> allowing a user to <strong>build modules</strong> with pre-defined actions and reactions on different <strong>services</strong>.<br/>
+These modules are based on an <strong>action-reaction</strong> pattern, meaning one can, for example, <strong>post a facebook status</strong> whenever something is <strong>tweeted</strong> on Twitter.<br/></p><p>To achieve this, we put at disposition a list of pre-defined actions and reactions linked to services such as <strong>Dropbox</strong>, <strong>Facebook</strong> or even <strong>Twitter</strong>.
+These modules can be created and configured on our <strong>Area Platfom</strong> or by using our <strong>RESTFUL API</strong>.</p><h2><a name='header-n28224' class='md-header-anchor '></a>How To Use It</h2><hr /><ul><li><h3><a name='header-n28228' class='md-header-anchor '></a>Table of Contents</h3></li></ul><ol start='' ><li><a href='#registration'>Registration</a></li><li><a href='#login'>Login</a></li><li><a href='#users'>Listing Users</a></li><li><a href='#mail'>Sending A Mail</a></li><li><a href='#get-user'>Getting A User</a></li><li><a href='#delete-user'>Deleting A User</a></li><li><a href='#update-user'>Updating A User</a></li><li><a href='#associate'>Associate An Account</a></li><li><a href='#disassiociate'>Disassociate An Account</a></li><li><a href='#enable-module'>Enable A Module</a></li><li><a href='#disable-module'>Disable A Module</a></li><li><a href='#list-modules'>List Modules</a></li><li><a href='#listeners'>Listeners</a></li><li><a href='#handlers'>Handlers</a></li></ol><h3><a name='header-n28272' class='md-header-anchor '></a>Registration <a name="registration"></a></h3><p>In order to <strong>register</strong> a new user, you have to execute a <strong>POST</strong> request on <strong>/register</strong>.<br/></p><p>The <strong>username</strong> must be unique, please check-out the <a href='#register-parameters'>register parameters</a> for more information.<br/></p><p>You will receive a <a href='#token-response'>response</a> containing your newly created <strong>id</strong> and <strong>access token</strong>.</p><p><em>Response Chart</em><br/>
+<strong>200 OK</strong> -&gt; Successful Registration<br/>
+<strong>400 BAD REQUEST</strong> -&gt; Badly Formatted Request<br/>
+<strong>409 CONFLICT</strong> -&gt; Conflicting Username</p><hr /><h3><a name='header-n28285' class='md-header-anchor '></a>Login <a name="login"></a></h3><p>In order to <strong>login</strong> as a user, you have to execute a <strong>POST</strong> request on <strong>/login</strong>.<br/></p><p>Please check-out the <a href='#login-parameters'>login parameters</a> for more information.<br/></p><p>You will receive a <a href='#token-response'>response</a> containing your <strong>id</strong> and <strong>access token</strong>.</p><p><em>Response Chart</em><br/>
+<strong>200 OK</strong> -&gt; Login Complete<br/>
+<strong>400 BAD REQUEST</strong> -&gt; Badly Formatted Request<br/>
+<strong>403 FORBIDDEN</strong> -&gt; Wrong Username Or Password</p><hr /><h3><a name='header-n28298' class='md-header-anchor '></a>Listing Users <a name="list-users"></a></h3><p>In order to <strong>list</strong> users, you have to execute a <strong>GET</strong> request on <strong>/users</strong>.<br/></p><p>You have to give your <strong>authentication token</strong> in the <strong>token</strong> field of the headers.<br/>
+Please note that you have to be <strong>admin</strong> to use this functionality.</p><p>You will receive a <a href='#user-response'>response</a> containing a list of <strong>users</strong>.</p><p><em>Response Chart</em><br/>
+<strong>200 OK</strong> -&gt; List Of Users<br/>
+<strong>403 FORBIDDEN</strong> -&gt; Wrong Permissions</p><hr /><h3><a name='header-n28311' class='md-header-anchor '></a>Sending A Mail <a name="mail"></a></h3><p>In order to <strong>send a mail</strong> to a user, you have to execute a <strong>POST</strong> request on <strong>/mails</strong>.<br/></p><p>You have to give your <strong>authentication token</strong> in the <strong>token</strong> field of the headers.<br/>
+Please note that you have to be <strong>admin</strong> to use this functionality.<br/>
+Please check-out the <a href='#email-parameters'>email parameters</a> for more information.</p><p>You won&#39;t receive any response on completion.</p><p><em>Response Chart</em><br/>
+<strong>200 OK</strong> -&gt; Mail Sent<br/>
+<strong>400 BAD REQUEST</strong> -&gt; Badly Formatted Request<br/>
+<strong>403 FORBIDDEN</strong> -&gt; Wrong Permissions<br/>
+<strong>404 NOT FOUND</strong> -&gt; User Not Found</p><hr /><h3><a name='header-n28327' class='md-header-anchor '></a>Getting A User <a name="get-user"></a></h3><p>In order to <strong>retrieve</strong> a user, you have to execute a <strong>GET</strong> request on <strong>/user/:userId</strong>.<br/></p><p>You have to give your <strong>authentication token</strong> in the <strong>token</strong> field of the headers.<br/>
+Please note that you have to be <strong>admin</strong> or the <strong>owner</strong> of the id to use this functionality.</p><p>You will receive a <a href='#user-response'>response</a> containing the requested <strong>user</strong> data.</p><p><em>Response Chart</em><br/>
+<strong>200 OK</strong> -&gt; User Information<br/>
+<strong>403 FORBIDDEN</strong> -&gt; Wrong Permissions<br/>
+<strong>404 NOT FOUND</strong> -&gt; User Not Found</p><hr /><h3><a name='header-n28341' class='md-header-anchor '></a>Removing A User <a name="delete-user"></a></h3><p>In order to <strong>remove</strong> a user, you have to execute a <strong>DELETE</strong> request on <strong>/user/:userId</strong>.<br/>
+You have to give your <strong>authentication token</strong> in the <strong>token</strong> field of the headers.<br/>
+Please note that you have to be <strong>admin</strong> or the <strong>owner</strong> of the id to use this functionality.</p><p>You won&#39;t receive any response on completion.</p><p><em>Response Chart</em><br/>
+<strong>200 OK</strong> -&gt; User Deleted<br/>
+<strong>403 FORBIDDEN</strong> -&gt; Wrong Permissions<br/>
+<strong>404 NOT FOUND</strong> -&gt; User Not Found</p><hr /><h3><a name='header-n28354' class='md-header-anchor '></a>Updating A User <a name="update-user"></a></h3><p>In order to <strong>update</strong> a user, you have to execute a <strong>POST</strong> request on <strong>/user/:userId</strong>.<br/>
+You have to give your <strong>authentication token</strong> in the <strong>token</strong> field of the headers.<br/>
+Please note that you have to be <strong>admin</strong> or the <strong>owner</strong> of the id to use this functionality.</p><p>You won&#39;t receive any response on completion.</p><p><em>Response Chart</em><br/>
+<strong>200 OK</strong> -&gt; User Updated<br/>
+<strong>400 BAD REQUEST</strong> -&gt; Badly Formatted Request<br/>
+<strong>403 FORBIDDEN</strong> -&gt; Wrong Permissions<br/>
+<strong>404 NOT FOUND</strong> -&gt; User Not Found</p><hr /><h3><a name='header-n28368' class='md-header-anchor '></a>Associating An Account <a name="associate"></a></h3><p>In order to <strong>associate</strong> a service account to a user, you have to execute a <strong>POST</strong> request on <strong>/user/:userId/{serviceName}</strong>.<br/>
+The <strong>service name</strong> can be either <strong>dropbox</strong>, <strong>facebook</strong> or <strong>twitter</strong>.</p><p>You have to give your <strong>authentication token</strong> in the <strong>token</strong> field of the headers.<br/>
+Please note that you have to be <strong>admin</strong> or the <strong>owner</strong> of the id to use this functionality.<br/>
+Please check-out the <a href='#dropbox-parameters'>dropbox parameters</a>, <a href='#facebook-parameters'>facebook parameters</a> or <a href='#twitter-parameters'>twitter parameters</a> for more information.</p><p>You won&#39;t receive any response on completion.</p><p><em>Response Chart</em><br/>
+<strong>200 OK</strong> -&gt; Account Associated<br/>
+<strong>400 BAD REQUEST</strong> -&gt; Badly Formatted Request<br/>
+<strong>403 FORBIDDEN</strong> -&gt; Wrong Permissions<br/>
+<strong>404 NOT FOUND</strong> -&gt; User Not Found</p><hr /><h3><a name='header-n28385' class='md-header-anchor '></a>Disassociating An Account <a name="associate"></a></h3><p>In order to <strong>disassociate</strong> a service account to a user, you have to execute a <strong>DELETE</strong> request on <strong>/user/:userId/{serviceName}</strong>.<br/>
+The <strong>service name</strong> can be either <strong>dropbox</strong>, <strong>facebook</strong> or <strong>twitter</strong>.</p><p>You have to give your <strong>authentication token</strong> in the <strong>token</strong> field of the headers.<br/>
+Please note that you have to be <strong>admin</strong> or the <strong>owner</strong> of the id to use this functionality.</p><p>You won&#39;t receive any response on completion.</p><p><em>Response Chart</em><br/>
+<strong>200 OK</strong> -&gt; Account Disassociated<br/>
+<strong>403 FORBIDDEN</strong> -&gt; Wrong Permissions<br/>
+<strong>404 NOT FOUND</strong> -&gt; User Not Found</p><hr /><h3><a name='header-n28400' class='md-header-anchor '></a>Enabling A Module <a name="enable-module"></a></h3><p>In order to <strong>enable</strong> a module linked to a user, you have to execute a <strong>POST</strong> request on <strong>/user/:userId/modules</strong>.<br/></p><p>You have to give your <strong>authentication token</strong> in the <strong>token</strong> field of the headers.<br/>
+Please note that you have to be <strong>admin</strong> or the <strong>owner</strong> of the id to use this functionality.
+Please check-out the <a href='#module-parameters'>module parameters</a> for more information.</p><p>You won&#39;t receive any response on completion.</p><p><em>Response Chart</em><br/>
+<strong>200 OK</strong> -&gt; Module Enabled<br/>
+<strong>400 BAD REQUEST</strong> -&gt; Badly Formatted Request<br/>
+<strong>403 FORBIDDEN</strong> -&gt; Wrong Permissions<br/>
+<strong>404 NOT FOUND</strong> -&gt; User Not Found</p><hr /><h3><a name='header-n28416' class='md-header-anchor '></a>Disabling A Module <a name="disable-module"></a></h3><p>In order to <strong>disable</strong> a module linked to a user, you have to execute a <strong>DELETE</strong> request on <strong>/user/:userId/modules</strong>.<br/></p><p>You have to give your <strong>authentication token</strong> in the <strong>token</strong> field of the headers.<br/>
+Please note that you have to be <strong>admin</strong> or the <strong>owner</strong> of the id to use this functionality.
+Please check-out the <a href='#module-parameters'>module parameters</a> for more information.</p><p>You won&#39;t receive any response on completion.</p><p><em>Response Chart</em><br/>
+<strong>200 OK</strong> -&gt; Module Disabled<br/>
+<strong>400 BAD REQUEST</strong> -&gt; Badly Formatted Request<br/>
+<strong>403 FORBIDDEN</strong> -&gt; Wrong Permissions<br/>
+<strong>404 NOT FOUND</strong> -&gt; User Not Found</p><hr /><h3><a name='header-n28432' class='md-header-anchor '></a>Listing Modules <a name="list-modules"></a></h3><p>In order to <strong>list</strong> the different modules enabled for a user, you have to execute a <strong>GET</strong> request on <strong>user/:userId/modules</strong>.<br/></p><p>You have to give your <strong>authentication token</strong> in the <strong>token</strong> field of the headers.<br/>
+Please note that you have to be <strong>admin</strong> or the <strong>owner</strong> of the id to use this functionality.</p><p>You won&#39;t receive any response on completion.</p><p><em>Response Chart</em><br/>
+<strong>200 OK</strong> -&gt; List Of Enabled Modules<br/>
+<strong>403 FORBIDDEN</strong> -&gt; Wrong Permissions<br/>
+<strong>404 NOT FOUND</strong> -&gt; User Not Found</p><hr /><h3><a name='header-n28446' class='md-header-anchor '></a>Listeners <a name="listeners"></a></h3><p>Below is the <strong>list</strong> of the different <strong>listeners</strong> available to the users that can be used to create <strong>modules</strong> along with their description.</p><table><thead><tr><th style='text-align:left;' >Listener name</th><th style='text-align:left;' >Description</th></tr></thead><tbody><tr><td style='text-align:left;' >DropboxFileAddedEvent</td><td style='text-align:left;' >File is created in Dropbox</td></tr><tr><td style='text-align:left;' >DropboxFileRemovedEvent</td><td style='text-align:left;' >File is removed in Dropbox</td></tr><tr><td style='text-align:left;' >DropboxFolderCreatedEvent</td><td style='text-align:left;' >Folder is create in Dropbox</td></tr><tr><td style='text-align:left;' >FacebookAboutEvent</td><td style='text-align:left;' >About is changed on Facebook</td></tr><tr><td style='text-align:left;' >FacebookBirthdayEvent</td><td style='text-align:left;' >Birthday is changed on Facebook</td></tr><tr><td style='text-align:left;' >FacebookEmailEvent</td><td style='text-align:left;' >Email is changed on Facebook</td></tr><tr><td style='text-align:left;' >FacebookFirstNameEvent</td><td style='text-align:left;' >First name is changed on Facebook</td></tr><tr><td style='text-align:left;' >FacebookLastNameEvent</td><td style='text-align:left;' >Last name is changed on Facebook</td></tr><tr><td style='text-align:left;' >FacebookLocaleEvent</td><td style='text-align:left;' >Locale is changed on Facebook</td></tr><tr><td style='text-align:left;' >FacebookPictureEvent</td><td style='text-align:left;' >Picture is changed on Facebook</td></tr><tr><td style='text-align:left;' >FacebookQuotesEvent</td><td style='text-align:left;' >Quotes is changed on Facebook</td></tr><tr><td style='text-align:left;' >FacebookReligionEvent</td><td style='text-align:left;' >Religion is changed on Facebook</td></tr><tr><td style='text-align:left;' >FacebookStatusEvent</td><td style='text-align:left;' >A new status is posted on Facebook</td></tr><tr><td style='text-align:left;' >FacebookWebsiteEvent</td><td style='text-align:left;' >Website is changed on Facebook</td></tr><tr><td style='text-align:left;' >TwitterStatusEvent</td><td style='text-align:left;' >A new status is tweeted on Tweeter</td></tr></tbody></table><hr /><h3><a name='header-n28499' class='md-header-anchor '></a>Handlers <a name="handlers"></a></h3><p>Below is the <strong>list</strong> of the different <strong>handlers</strong> available to the users that can be used to create <strong>modules</strong> along with their description.</p><table><thead><tr><th style='text-align:left;' >handler name</th><th style='text-align:left;' >Description</th></tr></thead><tbody><tr><td style='text-align:left;' >facebookOnTweet</td><td style='text-align:left;' >Facebook action when a status is tweeted on Twitter</td></tr><tr><td style='text-align:left;' >twitterOnFacebookEvent</td><td style='text-align:left;' >Twitter action when an event occurs on Facebook</td></tr><tr><td style='text-align:left;' >twitterOnFacebookBirthday</td><td style='text-align:left;' >Twitter action when birthday changes on Facebook</td></tr><tr><td style='text-align:left;' >twitterOnFacebookEmail</td><td style='text-align:left;' >Twitter action when email changes on Facebook</td></tr><tr><td style='text-align:left;' >twitterOnFacebookFirstName</td><td style='text-align:left;' >Twitter action when first name changes on Facebook</td></tr><tr><td style='text-align:left;' >twitterOnFacebookLastName</td><td style='text-align:left;' >Twitter action when last name changes on Facebook</td></tr><tr><td style='text-align:left;' >twitterOnFacebookPicture</td><td style='text-align:left;' >Twitter action when picture changes on Facebook</td></tr><tr><td style='text-align:left;' >twitterOnFacebookReligion</td><td style='text-align:left;' >Twitter action when religion changes on Facebook</td></tr><tr><td style='text-align:left;' >twitterOnFacebookQuote</td><td style='text-align:left;' >Twitter action when quote changes on Facebook</td></tr><tr><td style='text-align:left;' >twitterOnFacebookStatus</td><td style='text-align:left;' >Twitter action when a new status is posted on Facebook</td></tr><tr><td style='text-align:left;' >twitterOnFacebookWebsite</td><td style='text-align:left;' >Twitter action when website changes on Facebook</td></tr><tr><td style='text-align:left;' >twitterOnDropboxAddedFile</td><td style='text-align:left;' >Twitter action when a file is added on Dropbox</td></tr><tr><td style='text-align:left;' >twitterOnDropboxCreatedFolderFile</td><td style='text-align:left;' >Twitter action when a folder is created on Dropbox</td></tr><tr><td style='text-align:left;' >twitterOnDropboxRemovedFile</td><td style='text-align:left;' >Twitter action when a file is removed on Dropbox</td></tr><tr><td style='text-align:left;' >facebookOnDropboxAddedFile</td><td style='text-align:left;' >Facebook action when a file is created on Dropbox</td></tr><tr><td style='text-align:left;' >facebookOnDropboxCreatedFolderFile</td><td style='text-align:left;' >Facebook action when a folder is created on Dropbox</td></tr><tr><td style='text-align:left;' >facebookOnDropboxRemovedFile</td><td style='text-align:left;' >Facebook action when a file is removed on Dropbox</td></tr></tbody></table><h2><a name='header-n28557' class='md-header-anchor '></a>How It Works</h2><hr /><ul><li><h3><a name='header-n28561' class='md-header-anchor '></a>Table of Contents</h3></li></ul><ol start='' ><li><a href='#controllers'>Controllers</a></li><li><a href='#pipelines'>Pipelines</a></li><li><a href='#events'>Events</a></li><li><a href='#listeners'>Listeners</a></li><li><a href='#models'>Models</a></li><li><a href='#parameters'>Parameters</a></li><li><a href='#responses'>Responses</a></li><li><a href='#repositories'>Repositories</a></li><li><a href='#helpers'>Helpers</a></li></ol><h3><a name='header-n28590' class='md-header-anchor '></a>Controllers <a name="controllers"></a></h3><blockquote><p><em>I regulate actions defined by the responsibilities bestowed upon me.</em></p></blockquote><h4><a name='header-n28594' class='md-header-anchor '></a>Security Controller</h4><p>Is in charge of <strong>securing</strong> the access to the different <strong>services</strong> of the API.<br/>
+Regulations will be made based on the ownership of the ressources queried along with the user&#39;s role.<br/>
+<strong>Registration</strong> and <strong>log-in</strong> are also handled by this controller.</p><hr /><h4><a name='header-n28600' class='md-header-anchor '></a>Users Controller</h4><p><strong>Handles</strong> every interaction with the different users.<br/>
+<strong>Listing</strong>, <strong>updating</strong>, <strong>sending mails</strong> or even <strong>deleting users</strong> is done through this controller.</p><hr /><h4><a name='header-n28605' class='md-header-anchor '></a>Modules Controller</h4><p>Its goal is to allow the user to <strong>associate</strong> or <strong>disassociate</strong> itself with the different modules proposed by the API services.</p><hr /><h4><a name='header-n28609' class='md-header-anchor '></a>Services Controllers (Dropbox, Facebook, Twitter)</h4><p>These controllers&#39; purpose is to let the user <strong>associate</strong> or <strong>disassociate</strong> its account with the respective services.</p><hr /><h4><a name='header-n28613' class='md-header-anchor '></a>Webhook Controllers (Dropbox, Facebook)</h4><p>These controllers&#39; purpose is to <strong>receive</strong> information about subscribed changes of the associated service, and then <strong>deliver</strong> them to the associated pipeline.</p><h3><a name='header-n28616' class='md-header-anchor '></a>Pipelines <a name="pipelines"></a></h3><blockquote><p><em>I convey data to the proper receiving end.</em></p></blockquote><h4><a name='header-n28620' class='md-header-anchor '></a>The pipelines are the backbone of the AREA project.</h4><p>Indeed, their goal is to <strong>receive</strong> data about <strong>new changes</strong> from different services.<br/>
+They <strong>analyze</strong> the data, <strong>verify</strong> its integrity, and then <strong>associate</strong> it to the proper user.<br/>
+Once this is done, they <strong>generate</strong> an event containing both the data and the user it is associated to, which will then be treated by the different event listeners.</p><h3><a name='header-n28625' class='md-header-anchor '></a>Events <a name="events"></a></h3><blockquote><p><em>It&#39;s happening !</em></p></blockquote><h4><a name='header-n28629' class='md-header-anchor '></a>Dropbox Events</h4><p>These event symbolize the <strong>creation</strong> and <strong>deletion</strong> of any file or folder.<br/>
+They hold any associated data.</p><hr /><h4><a name='header-n28634' class='md-header-anchor '></a>Facebook Events</h4><p>These events symbolize any profile changes ranging from the <strong>birthday</strong> to the <strong>religion</strong> of a user, along with any <strong>status</strong> update.<br/>
+They hold any associated data.</p><hr /><h4><a name='header-n28639' class='md-header-anchor '></a>Twitter Events</h4><p>These events symbolize any <strong>status</strong> changes that occured for a user.<br/>
+They hold any associated data.</p><h3><a name='header-n28643' class='md-header-anchor '></a>Listeners <a name="listeners"></a></h3><blockquote><p><em>I can hear the voice of all things.</em></p></blockquote><h4><a name='header-n28647' class='md-header-anchor '></a>Event Factory</h4><p>Its goal is to provide the interface needed for the creation of new events.<br/>
+<strong>Creation</strong> and <strong>invocation</strong> of events is its duty.</p><hr /><h4><a name='header-n28652' class='md-header-anchor '></a>Service Event Handlers</h4><p>Any service has their associated <strong>handler</strong>, with <strong>reactions</strong> that will be <strong>invoked</strong> on a specific event ran by the event factory.</p><h3><a name='header-n28655' class='md-header-anchor '></a>Models <a name="models"></a></h3><blockquote><p><em>I think, therefore I am.</em></p></blockquote><h4><a name='header-n28659' class='md-header-anchor '></a>User</h4><p>This model <strong>represents</strong> what a user is.<br/>
+Every <strong>attribute</strong> such as its <strong>username</strong>, <strong>password</strong>, <strong>tokens</strong> and so on are stocked here, along with their associated methods.</p><hr /><h4><a name='header-n28664' class='md-header-anchor '></a>UserModule</h4><p>This model <strong>represents</strong> what a module is : a <strong>connection</strong> between a <strong>handler</strong> and a <strong>listener</strong>, making the creation of a <strong>link</strong> between an action and a reaction its goal.<br/>
+Every <strong>attribute</strong> such as the <strong>user</strong>, <strong>handlers</strong> and <strong>listeners</strong> it is associated to are stocked here, along with their associated methods.</p><hr /><h4><a name='header-n28669' class='md-header-anchor '></a>Log</h4><p>This model <strong>represents</strong> what a log is : a representation in time of an <strong>action</strong>.<br/>
+Every <strong>attribute</strong> such as the <strong>type</strong>, <strong>id</strong> and <strong>timestamp</strong> are stocked here, along with their associated methods.</p><h3><a name='header-n28673' class='md-header-anchor '></a>Parameters <a name="parameters"></a></h3><blockquote><p><em>I am what describes your nature.</em></p></blockquote><h4><a name='header-n28677' class='md-header-anchor '></a>Register Parameters <a name="register-parameters"></a></h4><p>Defines what is required when a user executes a registration request.<br/>
+A <strong>username</strong>, <strong>password</strong> and an <strong>email</strong> are mandatory.<br/></p><pre class="md-fences md-end-block" lang="json"> <div class="CodeMirror cm-s-inner CodeMirror-wrap"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 0px; left: 4px;"></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 30px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">{</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-string cm-property">"username"</span>:<span class="cm-tab" role="presentation" cm-text="	">   </span><span class="cm-string">"username"</span>,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-string cm-property">"password"</span>:<span class="cm-tab" role="presentation" cm-text="	">   </span><span class="cm-string">"password"</span>,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-string cm-property">"email"</span>:<span class="cm-tab" role="presentation" cm-text="	">  </span><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-string">"your.email@domain.com</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">}</span></pre></div></div></div></div></div><div style="position: absolute; height: 30px; width: 1px; border-bottom: 0px solid transparent; top: 120px;"></div><div class="CodeMirror-gutters" style="display: none; height: 150px;"></div></div></div></pre><hr /><h4><a name='header-n28683' class='md-header-anchor '></a>Login Parameters <a name="login-parameters"></a></h4><p>Defines what is required when a user executes a login request.<br/>
+A <strong>username</strong> and a <strong>password</strong> are mandatory.<br/></p><pre class="md-fences md-end-block" lang="json"> <div class="CodeMirror cm-s-inner CodeMirror-wrap"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 0px; left: 4px;"></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 30px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">{</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-string cm-property">"username"</span>:<span class="cm-tab" role="presentation" cm-text="	">   </span><span class="cm-string">"username"</span>,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-string cm-property">"password"</span>:<span class="cm-tab" role="presentation" cm-text="	">   </span><span class="cm-string">"password"</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">}</span></pre></div></div></div></div></div><div style="position: absolute; height: 30px; width: 1px; border-bottom: 0px solid transparent; top: 96px;"></div><div class="CodeMirror-gutters" style="display: none; height: 126px;"></div></div></div></pre><hr /><h4><a name='header-n28689' class='md-header-anchor '></a>Email Parameters <a name="email-parameters"></a></h4><p>Defines what is required when a user wishes to send a mail.<br/>
+A <strong>subject</strong> and a <strong>message</strong> are mandatory.<br/></p><pre class="md-fences md-end-block" lang="json"> <div class="CodeMirror cm-s-inner CodeMirror-wrap"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 0px; left: 4px;"></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 30px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">{</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-string cm-property">"subject"</span>:<span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-string">"subject"</span>,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-string cm-property">"message"</span>:<span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-string">"message"</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">}</span></pre></div></div></div></div></div><div style="position: absolute; height: 30px; width: 1px; border-bottom: 0px solid transparent; top: 96px;"></div><div class="CodeMirror-gutters" style="display: none; height: 126px;"></div></div></div></pre><hr /><h4><a name='header-n28695' class='md-header-anchor '></a>User Update Parameters <a name="update-parameters"></a></h4><p>Defines what is required when a user wishes to update information about itself.<br/>
+A <strong>password</strong> is mandatory, and a list of <strong>roles</strong> is optional.<br/></p><pre class="md-fences md-end-block" lang="json"> <div class="CodeMirror cm-s-inner CodeMirror-wrap"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 0px; left: 4px;"></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 30px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">{</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-string cm-property">"password"</span>:<span class="cm-tab" role="presentation" cm-text="	">   </span><span class="cm-string">"password"</span>,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-string cm-property">"roles"</span>:<span class="cm-tab" role="presentation" cm-text="	">  </span><span class="cm-tab" role="presentation" cm-text="	">    </span>[<span class="cm-string">"USER"</span>, <span class="cm-string">"ADMIN"</span>, <span class="cm-string">"..."</span>]</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">}</span></pre></div></div></div></div></div><div style="position: absolute; height: 30px; width: 1px; border-bottom: 0px solid transparent; top: 96px;"></div><div class="CodeMirror-gutters" style="display: none; height: 126px;"></div></div></div></pre><hr /><h4><a name='header-n28701' class='md-header-anchor '></a>Module Parameters <a name="module-parameters"></a></h4><p>Defines what is required when a users wishes to link actions and reactions with a module.<br/>
+A <strong>listener</strong> and a <strong>handler</strong> are mandatory.<br/></p><pre class="md-fences md-end-block" lang="json"> <div class="CodeMirror cm-s-inner CodeMirror-wrap"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 0px; left: 4px;"></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 30px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">{</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-string cm-property">"listener"</span>:<span class="cm-tab" role="presentation" cm-text="	">   </span><span class="cm-string">"listener"</span>,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-string cm-property">"handler"</span>:<span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-string">"handler"</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">}</span></pre></div></div></div></div></div><div style="position: absolute; height: 30px; width: 1px; border-bottom: 0px solid transparent; top: 96px;"></div><div class="CodeMirror-gutters" style="display: none; height: 126px;"></div></div></div></pre><hr /><h4><a name='header-n28707' class='md-header-anchor '></a>Dropbox Parameters <a name="dropbox-parameters"></a></h4><p>Defines what is required when a users wishes to associate its Dropbox account.<br/>
+An <strong>authorization token</strong> is mandatory.<br/></p><pre class="md-fences md-end-block" lang="json"> <div class="CodeMirror cm-s-inner CodeMirror-wrap"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 0px; left: 4px;"></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 30px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">{</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-string cm-property">"accessToken"</span>:<span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-string">"token"</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">}</span></pre></div></div></div></div></div><div style="position: absolute; height: 30px; width: 1px; border-bottom: 0px solid transparent; top: 72px;"></div><div class="CodeMirror-gutters" style="display: none; height: 102px;"></div></div></div></pre><hr /><h4><a name='header-n28713' class='md-header-anchor '></a>Facebook Parameters <a name="facebook-parameters"></a></h4><p>Defines what is required when a users wishes to associate its Facebook account.<br/>
+An <strong>authorization token</strong> is mandatory.<br/></p><pre class="md-fences md-end-block" lang="json"> <div class="CodeMirror cm-s-inner CodeMirror-wrap"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 0px; left: 4px;"></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 30px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">{</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-string cm-property">"accessToken"</span>:<span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-string">"token"</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">}</span></pre></div></div></div></div></div><div style="position: absolute; height: 30px; width: 1px; border-bottom: 0px solid transparent; top: 72px;"></div><div class="CodeMirror-gutters" style="display: none; height: 102px;"></div></div></div></pre><hr /><h4><a name='header-n28719' class='md-header-anchor '></a>Twitter Parameters <a name="twitter-parameters"></a></h4><p>Defines what is required when a users wishes to associate its Twitter account.<br/>
+An <strong>authorization token</strong> and a <strong>secret access token</strong> are mandatory.<br/></p><pre class="md-fences md-end-block" lang="json"> <div class="CodeMirror cm-s-inner CodeMirror-wrap"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 0px; left: 4px;"></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 30px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">{</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-string cm-property">"accessToken"</span>:<span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-string">"token"</span>,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-string cm-property">"accessTokenSecret"</span>:<span class="cm-tab" role="presentation" cm-text="	">  </span><span class="cm-string">"secretToken"</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">}</span></pre></div></div></div></div></div><div style="position: absolute; height: 30px; width: 1px; border-bottom: 0px solid transparent; top: 96px;"></div><div class="CodeMirror-gutters" style="display: none; height: 126px;"></div></div></div></pre><h3><a name='header-n28724' class='md-header-anchor '></a>Responses <a name="responses"></a></h3><blockquote><p><em>You wanted to know ?</em></p></blockquote><h4><a name='header-n28728' class='md-header-anchor '></a>Token Response <a name="token-response"></a></h4><p>Is what is sent following a <strong>login</strong> or <strong>register</strong> request.<br/>
+It represents a user by its <strong>id</strong> and <strong>token</strong> fields that are used and required for many API operations.<br/></p><pre class="md-fences md-end-block" lang="json"> <div class="CodeMirror cm-s-inner CodeMirror-wrap"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 0px; left: 4px;"></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 30px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">{</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-string cm-property">"id"</span>:<span class="cm-tab" role="presentation" cm-text="	"> </span><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-string">"id"</span>,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-string cm-property">"token"</span>:<span class="cm-tab" role="presentation" cm-text="	">  </span><span class="cm-string">"token"</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">}</span></pre></div></div></div></div></div><div style="position: absolute; height: 30px; width: 1px; border-bottom: 0px solid transparent; top: 96px;"></div><div class="CodeMirror-gutters" style="display: none; height: 126px;"></div></div></div></pre><hr /><h4><a name='header-n28734' class='md-header-anchor '></a>User Response <a name="user-response"></a></h4><p>Is what is sent follow a <strong>user</strong> or <strong>list users</strong> request.
+It represents a user by all its associated fields that are used and required for many API operations.</p><pre class="md-fences md-end-block" lang="json"> <div class="CodeMirror cm-s-inner CodeMirror-wrap"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 0px; left: 4px;"></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 30px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">{</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-string cm-property">"id"</span>: <span class="cm-number">1</span>,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-string cm-property">"username"</span>: <span class="cm-string">"username"</span>,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-string cm-property">"password"</span>: <span class="cm-string">"password"</span>,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-string cm-property">"email"</span>: <span class="cm-string">"your@email@domain.com"</span>,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-string cm-property">"token"</span>: <span class="cm-string">"token"</span>,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-string cm-property">"roles"</span>: [</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-string">"USER"</span>,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-string">"ADMIN"</span>,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-string">"..."</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;  ],</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-string cm-property">"facebookAccessToken"</span>: <span class="cm-string">"facebookToken"</span>,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-string cm-property">"twitterAccessToken"</span>: <span class="cm-string">"twitterToken"</span>,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-string cm-property">"twitterAccessTokenSecret"</span>: <span class="cm-string">"twitterSecretToken"</span>,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-string cm-property">"dropboxAccessToken"</span>: <span class="cm-string">"dropboxToken"</span>,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-string cm-property">"dropboxCursor"</span>: <span class="cm-string">"dropboxCursor"</span>,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-string cm-property">"twitterID"</span>: <span class="cm-string">"twitterID"</span>,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-string cm-property">"facebookUUID"</span>: <span class="cm-string">"facebookUUID"</span>,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-string cm-property">"dropboxID"</span>: <span class="cm-string">"dropboxID"</span>,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-string cm-property">"valid"</span>: <span class="cm-atom">true</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">}</span></pre></div></div></div></div></div><div style="position: absolute; height: 30px; width: 1px; border-bottom: 0px solid transparent; top: 504px;"></div><div class="CodeMirror-gutters" style="display: none; height: 534px;"></div></div></div></pre><h3><a name='header-n28739' class='md-header-anchor '></a>Repositories <a name="repositories"></a></h3><blockquote><p><em>I hold the knowledge.</em></p></blockquote><h4><a name='header-n28743' class='md-header-anchor '></a>Users Repository</h4><p>Stores every user and provides a way to interact with any of them.<br/>
+A multitude of methods are available, such as <strong>finding a user</strong> by its <strong>id</strong> or a <strong>service token</strong>, <strong>logging-in</strong>, <strong>creating</strong>, <strong>updating</strong> or <strong>removing</strong> a user, <strong>sending an e-mail</strong> and so on so that you can manipulate a user correctly. </p><hr /><h4><a name='header-n28748' class='md-header-anchor '></a>Logs Repository</h4><p>Holds a trace of every <strong>log</strong> (action) in <strong>time</strong> and provides a way to interact with any of them.<br/>
+Its main goal is to <strong>prevent</strong> the <strong>duplication</strong> of actions, as webhooks and such services tend to send the same changes multiple times to ensure it was received.</p><hr /><h4><a name='header-n28753' class='md-header-anchor '></a>UsersModule Repository</h4><p>Stores every module created by a certain user.<br/>
+Gathering <strong>listeners</strong> and <strong>handlers</strong>, it creates a way to <strong>interact</strong> and <strong>configure</strong> what a specific user wants to listen and react to.</p><h3><a name='header-n28757' class='md-header-anchor '></a>Helpers <a name="helpers"></a></h3><blockquote><p><em>What can I do for you ?</em></p></blockquote><p>The different helpers provide methods or mechanisms to help you in your daily life.</p><h4><a name='header-n28763' class='md-header-anchor '></a>Parameters Helper</h4><p>Provides a method to help you <strong>translate</strong> a <strong>JSON</strong> object into its associated <strong>class</strong>.</p><hr /><h4><a name='header-n28767' class='md-header-anchor '></a>Serializer Helper</h4><p>Provides a method to help you <strong>translate</strong> a <strong>class</strong> into its associated <strong>JSON</strong> object</p><hr /><h4><a name='header-n28771' class='md-header-anchor '></a>Header Helper</h4><p>Provides <strong>assistance</strong> for every <strong>configuration</strong> that may be needed with the <strong>headers</strong> of any <strong>request</strong>.</p><hr /><h4><a name='header-n28775' class='md-header-anchor '></a>Email Helper</h4><p>Provides methods to help you <strong>interact</strong> with a <strong>user</strong> and <strong>e-mails</strong>.</p><hr /><h4><a name='header-n28779' class='md-header-anchor '></a>Dropbox Helper</h4><p>Provides methods to help you <strong>interact</strong> with a <strong>Dropbox account</strong> associated to a <strong>user</strong>.</p><hr /><h4><a name='header-n28783' class='md-header-anchor '></a>Facebook Helper</h4><p>Provides methods to help you <strong>interact</strong> with a <strong>Facebook account</strong> associated to a <strong>user</strong>.</p><hr /><h4><a name='header-n28787' class='md-header-anchor '></a>Twitter Helper</h4><p>Provides methods to help you <strong>interact</strong> with a <strong>Twitter account</strong> associated to a <strong>user</strong>.</p></div>
+</body>
+</html>
