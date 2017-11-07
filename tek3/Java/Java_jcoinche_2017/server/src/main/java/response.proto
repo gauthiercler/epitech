@@ -1,0 +1,80 @@
+syntax = "proto2";
+
+package Response;
+
+option java_package = "com.jcoinche.server";
+option java_outer_classname = "Response";
+
+message ProtoResponse {
+
+    enum Type {
+        LIST_HAND = 0;
+        ASK_CARD = 1;
+        ASK_BET = 2;
+        LOG = 3;
+        VOID = 4;
+    }
+
+    required Type type = 1;
+
+    oneof data {
+        ListHand listHand = 2;
+        AskCard askCard = 3;
+        AskBet askBet = 4;
+        Log log = 5;
+    }
+
+    enum CardType {
+        SPADES = 1;
+        HEARTS = 2;
+        DIAMONDS = 3;
+        CLUBS = 4;
+    }
+    enum CardValue {
+        SEVEN = 1;
+        EIGHT = 2;
+        NINE = 3;
+        TEN = 4;
+        JACK = 5;
+        QUEEN = 6;
+        KING = 7;
+        ACE = 8;
+    }
+
+    message Card {
+        required CardType type = 1;
+        required CardValue value = 2;
+    }
+
+    enum BetType {
+        ALL = 1;
+        NONE = 2;
+        SPADE = 3;
+        HEART = 4;
+        DIAMOND = 5;
+        CLUB = 6;
+        COINCHE = 7;
+        PASS = 8;
+    }
+
+    message Bet {
+        required uint32 amout = 1;
+        required BetType type = 2;
+    }
+
+    message ListHand {
+        required string message = 1;
+    }
+
+    message AskCard {
+        required Card card = 1;
+    }
+
+    message AskBet {
+        required Bet bet = 1;
+    }
+
+    message Log {
+        required string message = 1;
+    }
+}

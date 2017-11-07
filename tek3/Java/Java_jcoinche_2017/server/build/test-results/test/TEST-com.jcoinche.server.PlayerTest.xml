@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.jcoinche.server.PlayerTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2017-10-22T21:29:15" hostname="gogo-HP-EliteBook-840-G2" time="0.024">
+  <properties/>
+  <testcase name="getBet" classname="com.jcoinche.server.PlayerTest" time="0.006"/>
+  <testcase name="addScore" classname="com.jcoinche.server.PlayerTest" time="0.001"/>
+  <testcase name="addCard" classname="com.jcoinche.server.PlayerTest" time="0.003"/>
+  <testcase name="setBet" classname="com.jcoinche.server.PlayerTest" time="0.0"/>
+  <testcase name="putCard" classname="com.jcoinche.server.PlayerTest" time="0.0"/>
+  <testcase name="getHand" classname="com.jcoinche.server.PlayerTest" time="0.0"/>
+  <testcase name="getId" classname="com.jcoinche.server.PlayerTest" time="0.0"/>
+  <testcase name="hasCard" classname="com.jcoinche.server.PlayerTest" time="0.008"/>
+  <testcase name="getScore" classname="com.jcoinche.server.PlayerTest" time="0.0"/>
+  <testcase name="getHandSize" classname="com.jcoinche.server.PlayerTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

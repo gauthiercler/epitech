@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Card.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">server</a> &gt; <a href="index.source.html" class="el_package">com.jcoinche.server</a> &gt; <span class="el_source">Card.java</span></div><h1>Card.java</h1><pre class="source lang-java linenums">package com.jcoinche.server;
+
+public class Card {
+<span class="pc" id="L4">    public enum CardType {</span>
+<span class="fc" id="L5">        SPADES,</span>
+<span class="fc" id="L6">        HEARTS,</span>
+<span class="fc" id="L7">        DIAMONDS,</span>
+<span class="fc" id="L8">        CLUBS</span>
+    }
+<span class="pc" id="L10">    public enum CardValue {</span>
+<span class="fc" id="L11">        SEVEN,</span>
+<span class="fc" id="L12">        EIGHT,</span>
+<span class="fc" id="L13">        NINE,</span>
+<span class="fc" id="L14">        TEN,</span>
+<span class="fc" id="L15">        JACK,</span>
+<span class="fc" id="L16">        QUEEN,</span>
+<span class="fc" id="L17">        KING,</span>
+<span class="fc" id="L18">        ACE</span>
+    }
+    private CardType type;
+    private CardValue value;
+
+<span class="fc" id="L23">    public Card(CardType type, CardValue value) {</span>
+<span class="fc" id="L24">        this.type = type;</span>
+<span class="fc" id="L25">        this.value = value;</span>
+<span class="fc" id="L26">    }</span>
+
+    public CardType getType() {
+<span class="fc" id="L29">        return type;</span>
+    }
+
+    public CardValue getValue() {
+<span class="fc" id="L33">        return value;</span>
+    }
+
+    public int getnbPoints(Room.Trump trump) {
+<span class="pc bpc" id="L37" title="2 of 4 branches missed.">        if (trump == Room.Trump.ALL || trump == Room.Trump.NONE)</span>
+<span class="nc" id="L38">            return Room.pointsTable.get(Room.TrumpType.valueOf(trump.toString())).get(this.value.ordinal());</span>
+<span class="pc bpc" id="L39" title="1 of 2 branches missed.">        if (trump.toString().equals(this.type.toString()))</span>
+<span class="nc" id="L40">            return Room.pointsTable.get(Room.TrumpType.TRUMP).get(this.value.ordinal());</span>
+<span class="fc" id="L41">        return Room.pointsTable.get(Room.TrumpType.NOTRUMP).get(this.value.ordinal());</span>
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+<span class="pc bpc" id="L46" title="1 of 2 branches missed.">        if (!(obj instanceof Card))</span>
+<span class="nc" id="L47">            return false;</span>
+<span class="fc" id="L48">        Card card = (Card)obj;</span>
+<span class="pc bpc" id="L49" title="2 of 4 branches missed.">        return card.getType() == this.type &amp;&amp; card.getValue() == this.getValue();</span>
+    }
+
+    @Override
+    public int hashCode() {
+<span class="fc" id="L54">        return type.hashCode();</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.7.8.201612092310</span></div></body></html>

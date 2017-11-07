@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Room.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">server</a> &gt; <a href="index.source.html" class="el_package">com.jcoinche.server</a> &gt; <span class="el_source">Room.java</span></div><h1>Room.java</h1><pre class="source lang-java linenums">package com.jcoinche.server;
+
+import java.util.*;
+
+<span class="fc" id="L5">public class Room {</span>
+    public static final int maxPlayers = 4;
+<span class="pc" id="L7">    public enum Trump {</span>
+<span class="fc" id="L8">        ALL,</span>
+<span class="fc" id="L9">        NONE,</span>
+<span class="fc" id="L10">        SPADES,</span>
+<span class="fc" id="L11">        HEARTS,</span>
+<span class="fc" id="L12">        DIAMONDS,</span>
+<span class="fc" id="L13">        CLUBS</span>
+    }
+<span class="pc" id="L15">    public enum TrumpType {</span>
+<span class="fc" id="L16">        ALL,</span>
+<span class="fc" id="L17">        NONE,</span>
+<span class="fc" id="L18">        TRUMP,</span>
+<span class="fc" id="L19">        NOTRUMP</span>
+    }
+    public static final Map&lt;TrumpType, List&lt;Integer&gt;&gt; pointsTable;
+    static {
+<span class="fc" id="L23">        pointsTable = new EnumMap&lt;TrumpType, List&lt;Integer&gt;&gt;(TrumpType.class);</span>
+<span class="fc" id="L24">        pointsTable.put(TrumpType.ALL, Arrays.asList(0, 0, 9, 5, 14, 2, 3, 7));</span>
+<span class="fc" id="L25">        pointsTable.put(TrumpType.NONE, Arrays.asList(0, 0, 0, 10, 2, 3, 4, 19));</span>
+<span class="fc" id="L26">        pointsTable.put(TrumpType.TRUMP, Arrays.asList(0, 0, 14, 10, 20, 3, 4, 11));</span>
+<span class="fc" id="L27">        pointsTable.put(TrumpType.NOTRUMP, Arrays.asList(0, 0, 0, 10, 2, 3, 4, 11));</span>
+<span class="fc" id="L28">    }</span>
+<span class="fc" id="L29">    private ArrayList&lt;Player&gt; players = new ArrayList&lt;Player&gt;();</span>
+    public Trump trump;
+
+    public void addPlayer(Player player) {
+<span class="pc bpc" id="L33" title="1 of 2 branches missed.">        if (this.getNbPlayers() &lt; maxPlayers)</span>
+<span class="fc" id="L34">        players.add(player);</span>
+<span class="fc" id="L35">    }</span>
+
+    public int getNbPlayers() {
+<span class="fc" id="L38">        return players.size();</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.7.8.201612092310</span></div></body></html>

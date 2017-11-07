@@ -1,0 +1,4 @@
+include ":common", ":server", ":client"
+
+rootProject.name = 'jcoinche'
+

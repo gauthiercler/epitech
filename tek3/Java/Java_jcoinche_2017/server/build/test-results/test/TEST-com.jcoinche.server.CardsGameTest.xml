@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.jcoinche.server.CardsGameTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2017-10-22T21:29:15" hostname="gogo-HP-EliteBook-840-G2" time="0.008">
+  <properties/>
+  <testcase name="getSize" classname="com.jcoinche.server.CardsGameTest" time="0.001"/>
+  <testcase name="giveOne" classname="com.jcoinche.server.CardsGameTest" time="0.001"/>
+  <testcase name="generate" classname="com.jcoinche.server.CardsGameTest" time="0.0"/>
+  <testcase name="isEmpty" classname="com.jcoinche.server.CardsGameTest" time="0.001"/>
+  <testcase name="shuffle" classname="com.jcoinche.server.CardsGameTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
