@@ -1,0 +1,4 @@
+{
+  "timestamp": { "type": "number" },
+  "name": { "type" : "string" }
+}

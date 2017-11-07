@@ -1,0 +1,10 @@
+{
+  "timestamp": { "type": "number" },
+  "process": { "type": "string" },
+  "data": { "type": "string" },
+  "client_mac": {
+    "type": "regex",
+    "value": "([0-9A-Fa-f]{2}[:-]){5}([0-9A-Fa-f]{2})"
+  },
+  "type": { "type": "enum", "values": [ "KEYSTROKE" ] }
+}

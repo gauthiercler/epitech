@@ -1,0 +1,7 @@
+{
+  "type": {
+    "type": "enum",
+    "values": [ "PING", "PONG" ]
+  },
+  "data": { "type": "number" }
+}

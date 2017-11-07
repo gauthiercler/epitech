@@ -1,0 +1,10 @@
+{
+  "timestamp": { "type": "number" },
+  "name": { "type" : "string" },
+  "toto": {
+    "type": "object",
+    "items": {
+      "x": { "type" : "number" }
+    }
+  }
+}

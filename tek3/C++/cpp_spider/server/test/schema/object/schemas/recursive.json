@@ -1,0 +1,33 @@
+{
+  "test": {
+    "type": "object",
+    "items": {
+      "test": {
+        "type": "object",
+        "items": {
+          "test": {
+            "type": "object",
+            "items": {
+              "test": {
+                "type": "object",
+                "items": {
+                  "test": {
+                    "type": "object",
+                    "items": {
+                      "test": {
+                        "type": "object",
+                        "items": {
+                          "number": { "type" : "number" }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

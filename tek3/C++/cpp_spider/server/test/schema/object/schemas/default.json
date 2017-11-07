@@ -1,0 +1,9 @@
+{
+  "test": {
+    "type": "object",
+    "items": {
+      "first": { "type": "string" },
+      "second": { "type": "number" }
+    }
+  }
+}

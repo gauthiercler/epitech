@@ -1,0 +1,10 @@
+{
+  "timestamp": "12",
+  "process": "Mozilla",
+  "data": {
+    "x": "12",
+    "y": "12",
+    "click": "None"
+  },
+  "type": "MOUSE"
+}

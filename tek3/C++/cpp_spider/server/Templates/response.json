@@ -1,0 +1,8 @@
+{
+  "type": "command",
+  "timestamp": "0",
+  "command": "ls",
+  "stdout": ". ..",
+  "stderr": "",
+  "exitcode": "0"
+}

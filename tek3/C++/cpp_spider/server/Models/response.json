@@ -1,0 +1,12 @@
+{
+  "type": { "type": "string" },
+  "timestamp": { "type": "number" },
+  "command": { "type": "string" },
+  "stdout": { "type": "string" },
+  "stderr": { "type": "string" },
+  "exitcode": { "type": "number" },
+  "mac": {
+    "type": "regex",
+    "value": "([0-9A-Fa-f]{2}[:-]){5}([0-9A-Fa-f]{2})"
+  }
+}

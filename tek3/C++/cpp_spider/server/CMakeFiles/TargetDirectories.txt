@@ -1,0 +1,4 @@
+/home/gogo/rendu/cpp_spider/server/CMakeFiles/edit_cache.dir
+/home/gogo/rendu/cpp_spider/server/CMakeFiles/spider_server.dir
+/home/gogo/rendu/cpp_spider/server/CMakeFiles/rebuild_cache.dir
+/home/gogo/rendu/cpp_spider/server/CMakeFiles/tests.dir

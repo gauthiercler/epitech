@@ -1,0 +1,6 @@
+{
+  "test": {
+    "type": "enum",
+    "values": ["First", "Second", "Third"]
+  }
+}
