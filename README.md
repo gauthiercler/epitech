@@ -6,7 +6,7 @@ Hello and welcome to my Epitech projects personnal repository. Here you can find
 
 ## Introduction
 
-Vue (pronounced `/vjuː/`, like view) is a **progressive framework** for building user interfaces. It is designed from the ground up to be incrementally adoptable, and can easily scale between a library and a framework depending on different use cases. It consists of an approachable core library that focuses on the view layer only, and an ecosystem of supporting libraries that helps you tackle complexity in large Single-Page Applications.
+TODO
 
 ## First Year
 
@@ -14,7 +14,7 @@ Vue (pronounced `/vjuː/`, like view) is a **progressive framework** for buildin
 |---------|----------|-------------|
 | [42sh]         |      C      | Shell based on TCSH |
 | [Allum1]       |       C     | The Game of Marienbad |
-| [BSQ]          |       C     | Large-scale state management |
+| [BSQ]          |       C     | Shape finding in map |
 | [Corewar]      |     C, ASM       | Compiler of pseudo ASM code |
 | [Dante]        |      C      | Generation & solving of mazes (using A*, BFS, DFS...) |
 | [Getnextline]  |      C      | Recode of getline system function |
@@ -26,14 +26,14 @@ Vue (pronounced `/vjuː/`, like view) is a **progressive framework** for buildin
 | [Minitalk]     |     C       | Client/Severcommunication using signals |
 | [Need4Steak]   |     C       | Browser DevTools extension |
 | [Printf]       |     C       | Recode of printf function |
-| [Pushswap]     |     C       | Browser DevTools extension |
-| [Raytracer]    |     C       | Browser DevTools extension |
-| [Raytracer2]   |     C       | Browser DevTools extension |
-| [Select]       |      C      | Browser DevTools extension |
-| [Scroller]     |      C      | Browser DevTools extension |
-| [TekAdventure] |       C     | Browser DevTools extension |
-| [TekGUI]       |     C       | Browser DevTools extension |
-| [TekPaint]     |     C       | Browser DevTools extension |
+| [Pushswap]     |     C       | Sorting Algorithm |
+| [Raytracer]    |     C       | 3D objects rendering |
+| [Raytracer2]   |     C       | Advanced 3D objects rendering |
+| [Select]       |      C      | Selection tool in Ncurses |
+| [Scroller]     |      C      | Scroller Rush animation |
+| [TekAdventure] |       C     | Scroller Point & Click adventure game |
+| [TekGUI]       |     C       | Window managment |
+| [TekPaint]     |     C       | Paint Like |
 | [Tetris]       |      C      | Tetris game |
 | [Wireframe]    |     C       | Browser DevTools extension |
 | [Wolf3D]       |     C       | Wolf3D game |
@@ -66,4 +66,4 @@ Vue (pronounced `/vjuː/`, like view) is a **progressive framework** for buildin
 [Wolf3D]: https://github.com/G0go/epitech/tree/master/tek1/Graphical/gfx_wolf3d
 
 
-
+TODO:: 2nd & 3rd year
