@@ -66,4 +66,22 @@ TODO
 [Wolf3D]: https://github.com/G0go/epitech/tree/master/tek1/Graphical/gfx_wolf3d
 
 
+## Second Year
+
+| Project | Language | Description |
+|---------|----------|-------------|
+| [ASM LibC]         |      ASM      | recode of some LibC functions in ASM |
+| [C++ Pool]       |       C++     | Start of year C++ Pool |
+| [Arcade]          |       C++     | Arcade with games and lib changing at runtime |
+| [Indie Studio]      |     C++, Python       | Bomberman using Irrlicht |
+| [Nanotekspice]        |      C++      | Electronic simulation |
+| [LemIPC]  |      C      | AI Teams which fight in arena using IPC |
+| [Malloc]     |    C        | recode of malloc function |
+| [FTP]        |     C       | recode of FTP server |
+| [IRC]           |     C       | Recode of IRC client & server |
+| [NM/OBJDump]    |     C       | recode of NM and OBJdump programs |
+| [Philosophers]   |     C       | Dining philosophers problem |
+| [Zappy]     |     C, C++       | Client/Severcommunication using signals |
+
+
 TODO:: 2nd & 3rd year
