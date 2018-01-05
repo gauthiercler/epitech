@@ -14,7 +14,7 @@ TODO
 |---------|----------|-------------|
 | [42sh]         |      C      | Shell based on TCSH |
 | [Allum1]       |       C     | The Game of Marienbad |
-| [BSQ]          |       C     | Large-scale state management |
+| [BSQ]          |       C     | Shape finding in map |
 | [Corewar]      |     C, ASM       | Compiler of pseudo ASM code |
 | [Dante]        |      C      | Generation & solving of mazes (using A*, BFS, DFS...) |
 | [Getnextline]  |      C      | Recode of getline system function |
