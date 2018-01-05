@@ -1,1 +1,69 @@
-# epitech
+
+<h2 align="center">Epitech projects repository</h2>
+
+Hello and welcome to my Epitech projects personnal repository. Here you can find every (or almost) project i realized during my three first years of studing at Epitech.
+
+
+## Introduction
+
+Vue (pronounced `/vjuː/`, like view) is a **progressive framework** for building user interfaces. It is designed from the ground up to be incrementally adoptable, and can easily scale between a library and a framework depending on different use cases. It consists of an approachable core library that focuses on the view layer only, and an ecosystem of supporting libraries that helps you tackle complexity in large Single-Page Applications.
+
+## First Year
+
+| Project | Language | Description |
+|---------|----------|-------------|
+| [42sh]         |      C      | Shell based on TCSH |
+| [Allum1]       |       C     | The Game of Marienbad |
+| [BSQ]          |       C     | Large-scale state management |
+| [Corewar]      |     C, ASM       | Compiler of pseudo ASM code |
+| [Dante]        |      C      | Generation & solving of mazes (using A*, BFS, DFS...) |
+| [Getnextline]  |      C      | Recode of getline system function |
+| [Incendie]     |    C        | TypeScript decorator for a class-based API |
+| [Lemin]        |     C       | TypeScript decorator for a class-based API |
+| [Ls]           |     C       | Recode of ls command |
+| [Minishell]    |     C       | Interactive shell |
+| [Minishell2]   |     C       | Interactive shell with more options |
+| [Minitalk]     |     C       | Client/Severcommunication using signals |
+| [Need4Steak]   |     C       | Browser DevTools extension |
+| [Printf]       |     C       | Recode of printf function |
+| [Pushswap]     |     C       | Browser DevTools extension |
+| [Raytracer]    |     C       | Browser DevTools extension |
+| [Raytracer2]   |     C       | Browser DevTools extension |
+| [Select]       |      C      | Browser DevTools extension |
+| [Scroller]     |      C      | Browser DevTools extension |
+| [TekAdventure] |       C     | Browser DevTools extension |
+| [TekGUI]       |     C       | Browser DevTools extension |
+| [TekPaint]     |     C       | Browser DevTools extension |
+| [Tetris]       |      C      | Tetris game |
+| [Wireframe]    |     C       | Browser DevTools extension |
+| [Wolf3D]       |     C       | Wolf3D game |
+
+
+[42sh]: https://github.com/G0go/epitech/tree/master/tek1/PSU/PSU_2015_42sh
+[Allum1]: https://github.com/G0go/epitech/tree/master/tek1/CPE/CPE_2015_Allum1
+[BSQ]: https://github.com/G0go/epitech/tree/master/tek1/CPE/CPE_2015_BSQ
+[Corewar]: https://github.com/G0go/epitech/tree/master/tek1/CPE/CPE_2015_corewar
+[Dante]: https://github.com/G0go/epitech/tree/master/tek1/IA/dante
+[Getnextline]: https://github.com/G0go/epitech/tree/master/tek1/CPE/CPE_2015_getnextline
+[Incendie]: https://github.com/G0go/epitech/tree/master/tek1/Graphical/gfx_incendie
+[Lemin]: https://github.com/G0go/epitech/tree/master/tek1/CPE/CPE_2015_Lemin
+[Ls]: https://github.com/G0go/epitech/tree/master/tek1/PSU/PSU_2015_my_ls
+[Minishell]: https://github.com/G0go/epitech/tree/master/tek1/PSU/PSU_2015_minishell1
+[Minishell2]: https://github.com/G0go/epitech/tree/master/tek1/PSU/PSU_2015_minishell2
+[Minitalk]: https://github.com/G0go/epitech/tree/master/tek1/PSU/PSU_2015_minitalk
+[Need4Steak]:  https://github.com/G0go/epitech/tree/master/tek1/CPE/CPE_2015_n4s
+[Printf]: https://github.com/G0go/epitech/tree/master/tek1/PSU/PSU_2015_my_printf
+[Pushswap]: https://github.com/G0go/epitech/tree/master/tek1/CPE/CPE_2015_Pushswap
+[Raytracer]: https://github.com/G0go/epitech/tree/master/tek1/Graphical/gfx_raytracer1
+[Raytracer2]: https://github.com/G0go/epitech/tree/master/tek1/Graphical/gfx_raytracer2
+[Select]: https://github.com/G0go/epitech/tree/master/tek1/PSU/PSU_2015_my_select
+[Scroller]: https://github.com/G0go/epitech/tree/master/tek1/Graphical/gfx_scroller
+[TekAdventure]: https://github.com/G0go/epitech/tree/master/tek1/Graphical/gfx_tekadventure
+[TekGUI]: https://github.com/G0go/epitech/tree/master/tek1/Graphical/gfx_tekgui
+[TekPaint]: https://github.com/G0go/epitech/tree/master/tek1/Graphical/gfx_tekpaint
+[Tetris]: https://github.com/G0go/epitech/tree/master/tek1/PSU/PSU_2015_tetris
+[Wireframe]: https://github.com/G0go/epitech/tree/master/tek1/Graphical/gfx_fdf2
+[Wolf3D]: https://github.com/G0go/epitech/tree/master/tek1/Graphical/gfx_wolf3d
+
+
+
