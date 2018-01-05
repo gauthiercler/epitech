@@ -94,7 +94,7 @@ TODO
 [IRC]: https://github.com/G0go/epitech/tree/master/tek2/PSU/PSU_2016_myirc
 [NM/OBJDump]: https://github.com/G0go/epitech/tree/master/tek2/PSU/PSU_2016_nmobjdump
 [Zappy]: https://github.com/G0go/epitech/tree/master/tek2/PSU/PSU_2016_zappy
-[Philosophers]
+[Philosophers] https://github.com/G0go/epitech/tree/master/tek2/PSU/PSU_2016_philo
 
 
 
