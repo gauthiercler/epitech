@@ -1,4 +1,0 @@
-box: nodesource/trusty
-build:
-  steps:
-    - ls
