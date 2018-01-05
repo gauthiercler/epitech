@@ -70,15 +70,15 @@ TODO
 
 | Project | Language | Description |
 |---------|----------|-------------|
+| [Arcade]          |       C++     | Arcade with games and lib changing at runtime |
 | [ASM LibC]         |      ASM      | recode of some LibC functions in ASM |
 | [C++ Pool]       |       C++     | Start of year C++ Pool |
-| [Arcade]          |       C++     | Arcade with games and lib changing at runtime |
+| [FTP]        |     C       | recode of FTP server |
 | [Indie Studio]      |     C++, Python       | Bomberman using Irrlicht |
-| [Nanotekspice]        |      C++      | Electronic simulation |
+| [IRC]           |     C       | Recode of IRC client & server |
 | [LemIPC]  |      C      | AI Teams which fight in arena using IPC |
 | [Malloc]     |    C        | recode of malloc function |
-| [FTP]        |     C       | recode of FTP server |
-| [IRC]           |     C       | Recode of IRC client & server |
+| [Nanotekspice]        |      C++      | Electronic simulation |
 | [NM/OBJDump]    |     C       | recode of NM and OBJdump programs |
 | [Philosophers]   |     C       | Dining philosophers problem |
 | [Zappy]     |     C, C++       | Client/Severcommunication using signals |
@@ -96,6 +96,17 @@ TODO
 [Zappy]: https://github.com/G0go/epitech/tree/master/tek2/PSU/PSU_2016_zappy
 [Philosophers]: https://github.com/G0go/epitech/tree/master/tek2/PSU/PSU_2016_philo
 
+## Third Year
 
+| Project | Language | Description |
+|---------|----------|-------------|
+| [Gomoku]          |       C++     | AI for the Gomoku game |
+| [Spider]         |      C++/JS      | Keylogger with data sending over network |
+| [Area]       |       Java/JS     | Clone of IFTTT |
+| [Coinche]        |     Java       | Coinche Belote with client/server network |
 
-TODO:: 2nd & 3rd year
+[Gomoku]: https://github.com/G0go/epitech/tree/master/tek3/AI/gomoku
+[Area]: https://github.com/G0go/epitech/tree/master/tek3/Java/Java_area_2017
+[Coinche]: https://github.com/G0go/epitech/tree/master/tek3/Java/Java_jcoinche_2017
+[Spider]: https://github.com/G0go/epitech/tree/master/tek3/C%2B%2B/cpp_spider
+
