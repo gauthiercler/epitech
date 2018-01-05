@@ -4,10 +4,6 @@
 Hello and welcome to my Epitech projects personnal repository. Here you can find every (or almost) project i realized during my three first years of studing at Epitech.
 
 
-## Introduction
-
-TODO
-
 ## First Year
 
 | Project | Language | Description |
