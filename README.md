@@ -26,14 +26,14 @@ TODO
 | [Minitalk]     |     C       | Client/Severcommunication using signals |
 | [Need4Steak]   |     C       | Browser DevTools extension |
 | [Printf]       |     C       | Recode of printf function |
-| [Pushswap]     |     C       | Browser DevTools extension |
-| [Raytracer]    |     C       | Browser DevTools extension |
-| [Raytracer2]   |     C       | Browser DevTools extension |
-| [Select]       |      C      | Browser DevTools extension |
-| [Scroller]     |      C      | Browser DevTools extension |
-| [TekAdventure] |       C     | Browser DevTools extension |
-| [TekGUI]       |     C       | Browser DevTools extension |
-| [TekPaint]     |     C       | Browser DevTools extension |
+| [Pushswap]     |     C       | Sorting Algorithm |
+| [Raytracer]    |     C       | 3D objects rendering |
+| [Raytracer2]   |     C       | Advanced 3D objects rendering |
+| [Select]       |      C      | Selection tool in Ncurses |
+| [Scroller]     |      C      | Scroller Rush animation |
+| [TekAdventure] |       C     | Scroller Point & Click adventure game |
+| [TekGUI]       |     C       | Window managment |
+| [TekPaint]     |     C       | Paint Like |
 | [Tetris]       |      C      | Tetris game |
 | [Wireframe]    |     C       | Browser DevTools extension |
 | [Wolf3D]       |     C       | Wolf3D game |
