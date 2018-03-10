@@ -14,8 +14,8 @@ Hello and welcome to my Epitech projects personnal repository. Here you can find
 | [Corewar]      |     C, ASM       | Compiler of pseudo ASM code |
 | [Dante]        |      C      | Generation & solving of mazes (using A*, BFS, DFS...) |
 | [Getnextline]  |      C      | Recode of getline system function |
-| [Incendie]     |    C        | TypeScript decorator for a class-based API |
-| [Lemin]        |     C       | TypeScript decorator for a class-based API |
+| [Incendie]     |    C        | Fire effect animation |
+| [Lemin]        |     C       | Pathfinding using Dijkstra algorithm |
 | [Ls]           |     C       | Recode of ls command |
 | [Minishell]    |     C       | Interactive shell |
 | [Minishell2]   |     C       | Interactive shell with more options |
