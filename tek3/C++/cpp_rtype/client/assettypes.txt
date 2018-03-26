@@ -1,0 +1,4 @@
+rtype ->
+	//TODO Sprite
+	Sprite -> 1
+	Font -> 2

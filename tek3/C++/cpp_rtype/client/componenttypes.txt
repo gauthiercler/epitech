@@ -1,0 +1,12 @@
+ecs ->
+	Acceleration -> 1
+	PlayerID -> 2
+	RTypeCommand -> 3
+	Speed -> 4
+	Position -> 5
+
+rtype ->
+	RTypeInput -> 6
+	Sprite -> 7
+	Drawable -> 8
+	Text -> 9
