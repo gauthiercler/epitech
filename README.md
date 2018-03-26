@@ -19,7 +19,7 @@ Hello and welcome to my Epitech projects personnal repository. Here you can find
 | [Ls]           |     C       | Recode of ls command |
 | [Minishell]    |     C       | Interactive shell |
 | [Minishell2]   |     C       | Interactive shell with more options |
-| [Minitalk]     |     C       | Client/Severcommunication using signals |
+| [Minitalk]     |     C       | Client/Sever communication using signals |
 | [Need4Steak]   |     C       | Browser DevTools extension |
 | [Printf]       |     C       | Recode of printf function |
 | [Pushswap]     |     C       | Sorting Algorithm |
@@ -77,7 +77,7 @@ Hello and welcome to my Epitech projects personnal repository. Here you can find
 | [Nanotekspice]        |      C++      | Electronic simulation |
 | [NM/OBJDump]    |     C       | recode of NM and OBJdump programs |
 | [Philosophers]   |     C       | Dining philosophers problem |
-| [Zappy]     |     C, C++       | Client/Severcommunication using signals |
+| [Zappy]     |     C, C++       | Complete network game (server, UI, AI) |
 
 [ASM LibC]: https://github.com/G0go/epitech/tree/master/tek2/ASM/asm_minilibc
 [C++ Pool]: https://github.com/G0go/epitech/tree/master/tek2/C%2B%2B/Pool
@@ -96,13 +96,17 @@ Hello and welcome to my Epitech projects personnal repository. Here you can find
 
 | Project | Language | Description |
 |---------|----------|-------------|
-| [Gomoku]          |       C++     | AI for the Gomoku game |
-| [Spider]         |      C++/JS      | Keylogger with data sending over network |
 | [Area]       |       Java/JS     | Clone of IFTTT |
 | [Coinche]        |     Java       | Coinche Belote with client/server network |
+| [Gomoku]          |       C++     | AI for the Gomoku game |
+| [RType]        |     C++       | Recode of multiplayer famous rtype game |
+| [Spider]         |      C++/JS      | Keylogger with data sending over network |
+| [Zia]         |      C++      | Light apache like Http server |
 
 [Gomoku]: https://github.com/G0go/epitech/tree/master/tek3/AI/gomoku
 [Area]: https://github.com/G0go/epitech/tree/master/tek3/Java/Java_area_2017
 [Coinche]: https://github.com/G0go/epitech/tree/master/tek3/Java/Java_jcoinche_2017
 [Spider]: https://github.com/G0go/epitech/tree/master/tek3/C%2B%2B/cpp_spider
+[Zia]: https://github.com/G0go/epitech/tree/master/tek3/C%2B%2B/cpp_zia
+[RType]: https://github.com/G0go/epitech/tree/master/tek3/C%2B%2B/cpp_rtype
 
