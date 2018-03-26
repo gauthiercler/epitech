@@ -98,6 +98,7 @@ Hello and welcome to my Epitech projects personnal repository. Here you can find
 |---------|----------|-------------|
 | [Area]       |       Java/JS     | Clone of IFTTT |
 | [Coinche]        |     Java       | Coinche Belote with client/server network |
+| [Epicture]        |     Java Android       | Imgur android client |
 | [Gomoku]          |       C++     | AI for the Gomoku game |
 | [Koak]          |       Haskell     | Kaleidoscope compiler |
 | [RType]        |     C++       | Recode of multiplayer famous rtype game |
@@ -111,3 +112,4 @@ Hello and welcome to my Epitech projects personnal repository. Here you can find
 [Zia]: https://github.com/G0go/epitech/tree/master/tek3/C%2B%2B/cpp_zia
 [RType]: https://github.com/G0go/epitech/tree/master/tek3/C%2B%2B/cpp_rtype
 [Koak]: https://github.com/G0go/epitech/tree/master/tek3/FP/koak
+[Epicture]: https://github.com/G0go/epitech/tree/master/tek3/Java/Java_epicture_2017
