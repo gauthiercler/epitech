@@ -20,7 +20,7 @@ Hello and welcome to my Epitech projects personnal repository. Here you can find
 | [Minishell]    |     C       | Interactive shell |
 | [Minishell2]   |     C       | Interactive shell with more options |
 | [Minitalk]     |     C       | Client/Sever communication using signals |
-| [Need4Steak]   |     C       | Browser DevTools extension |
+| [Need4Steak]   |     C       | Autonomous car simulation using V-REP |
 | [Printf]       |     C       | Recode of printf function |
 | [Pushswap]     |     C       | Sorting Algorithm |
 | [Raytracer]    |     C       | 3D objects rendering |
