@@ -20,7 +20,7 @@ Hello and welcome to my Epitech projects personnal repository. Here you can find
 | [Minishell]    |     C       | Interactive shell |
 | [Minishell2]   |     C       | Interactive shell with more options |
 | [Minitalk]     |     C       | Client/Sever communication using signals |
-| [Need4Steak]   |     C       | Browser DevTools extension |
+| [Need4Steak]   |     C       | Autonomous car simulation using V-REP |
 | [Printf]       |     C       | Recode of printf function |
 | [Pushswap]     |     C       | Sorting Algorithm |
 | [Raytracer]    |     C       | 3D objects rendering |
@@ -99,6 +99,7 @@ Hello and welcome to my Epitech projects personnal repository. Here you can find
 | [Area]       |       Java/JS     | Clone of IFTTT |
 | [Coinche]        |     Java       | Coinche Belote with client/server network |
 | [Gomoku]          |       C++     | AI for the Gomoku game |
+| [Koak]          |       Haskell     | Kaleidoscope compiler |
 | [RType]        |     C++       | Recode of multiplayer famous rtype game |
 | [Spider]         |      C++/JS      | Keylogger with data sending over network |
 | [Zia]         |      C++      | Light apache like Http server |
@@ -109,4 +110,4 @@ Hello and welcome to my Epitech projects personnal repository. Here you can find
 [Spider]: https://github.com/G0go/epitech/tree/master/tek3/C%2B%2B/cpp_spider
 [Zia]: https://github.com/G0go/epitech/tree/master/tek3/C%2B%2B/cpp_zia
 [RType]: https://github.com/G0go/epitech/tree/master/tek3/C%2B%2B/cpp_rtype
-
+[Koak]: https://github.com/G0go/epitech/tree/master/tek3/FP/koak
