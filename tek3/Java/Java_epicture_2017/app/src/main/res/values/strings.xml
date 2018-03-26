@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Epicture</string>
+    <string name="title_home">Home</string>
+    <string name="title_search">Search</string>
+    <string name="title_favorite">Favorites</string>
+    <string name="title_upload">Upload</string>
+    <string name="upload_button">Upload</string>
+    <string name="select_image_button">Select an image</string>
+    <string name="image_title_hint">image title</string>
+    <string name="image_description_hint">image description</string>
+    <string name="accounts">Accounts</string>
+    <string name="imgur">Imgur</string>
+    <string name="disconnect">Logout</string>
+    <string name="connect">Login</string>
+    <string name="copy_link_toast">Copied link</string>
+    <string name="update_favorite_toast">Updated favorites</string>
+    <string name="select_action">Select Action</string>
+    <string name="select_from_gallery">Select photo from gallery</string>
+    <string name="select_from_camera">Capture photo from camera</string>
+    <string name="title_missing">You need to enter a title</string>
+    <string name="description_missing">You need to enter a description</string>
+</resources>

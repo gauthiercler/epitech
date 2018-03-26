@@ -1,0 +1,22 @@
+<!-- fragment_dashboard.xml -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="eu.epitech.epicture.fragments.SearchFragment">
+
+    <android.support.v7.widget.CardView
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <GridView
+            android:id="@+id/grid_view_perso"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:horizontalSpacing="5dp"
+            android:numColumns="2"
+            android:verticalSpacing="5dp" />
+
+    </android.support.v7.widget.CardView>
+</FrameLayout>
