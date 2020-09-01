@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "axios": "^0.16.2",
-    "buefy": "^0.5.3",
+    "buefy": "^0.7.2",
     "element-ui": "^2.0.0-alpha.2",
     "fs": "0.0.1-security",
     "socket.io-client": "^2.0.3",
